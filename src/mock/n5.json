@@ -1,0 +1,6055 @@
+{
+  "level": "N5",
+  "stages": [
+    {
+      "stage": 1,
+      "words": [
+        {
+          "id": 1,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Sách",
+            "Trường học",
+            "Xe"
+          ]
+        },
+        {
+          "id": 2,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sách",
+            "Xe",
+            "Lửa",
+            "Người"
+          ]
+        },
+        {
+          "id": 3,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Sông",
+            "Nước",
+            "Người",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 4,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Người",
+            "Đất",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 5,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 6,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Núi",
+            "Lửa",
+            "Sông",
+            "Xe"
+          ]
+        },
+        {
+          "id": 7,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Nước",
+            "Người"
+          ]
+        },
+        {
+          "id": 8,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Gió",
+            "Xe",
+            "Nước",
+            "Sông"
+          ]
+        },
+        {
+          "id": 9,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Mèo",
+            "Nước"
+          ]
+        },
+        {
+          "id": 10,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Núi",
+            "Gió"
+          ]
+        },
+        {
+          "id": 11,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Nước",
+            "Gió",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 12,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Người",
+            "Trường học",
+            "Xe",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 13,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Lửa",
+            "Mèo",
+            "Sách",
+            "Gió"
+          ]
+        },
+        {
+          "id": 14,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sông",
+            "Gió",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 15,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Gió",
+            "Nước",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 16,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Xe",
+            "Nước",
+            "Gió"
+          ]
+        },
+        {
+          "id": 17,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Núi",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 18,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Núi",
+            "Mèo",
+            "Đất",
+            "Gió"
+          ]
+        },
+        {
+          "id": 19,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Xe",
+            "Sách",
+            "Đất"
+          ]
+        },
+        {
+          "id": 20,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Nước",
+            "Trường học",
+            "Gió"
+          ]
+        },
+        {
+          "id": 21,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Sông",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 22,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Người",
+            "Sách"
+          ]
+        },
+        {
+          "id": 23,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Gió",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 24,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Người",
+            "Đất",
+            "Núi"
+          ]
+        },
+        {
+          "id": 25,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Lửa",
+            "Xe",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 26,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Người",
+            "Trường học",
+            "Mèo",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 27,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sách",
+            "Gió",
+            "Sông",
+            "Xe"
+          ]
+        },
+        {
+          "id": 28,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Trường học",
+            "Sách",
+            "Đất"
+          ]
+        },
+        {
+          "id": 29,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Trường học",
+            "Sách",
+            "Người",
+            "Núi"
+          ]
+        },
+        {
+          "id": 30,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Sách",
+            "Lửa",
+            "Người"
+          ]
+        },
+        {
+          "id": 31,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Nước",
+            "Người",
+            "Xe",
+            "Sông"
+          ]
+        },
+        {
+          "id": 32,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Nước",
+            "Sông",
+            "Lửa",
+            "Người"
+          ]
+        },
+        {
+          "id": 33,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 34,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Nước",
+            "Trường học",
+            "Chó"
+          ]
+        },
+        {
+          "id": 35,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Người",
+            "Sách",
+            "Núi",
+            "Sông"
+          ]
+        },
+        {
+          "id": 36,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Núi",
+            "Sông",
+            "Đất",
+            "Người"
+          ]
+        },
+        {
+          "id": 37,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sông",
+            "Sách",
+            "Núi",
+            "Nước"
+          ]
+        },
+        {
+          "id": 38,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Người",
+            "Gió",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 39,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Đất",
+            "Sông",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 40,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sông",
+            "Xe",
+            "Mèo",
+            "Đất"
+          ]
+        },
+        {
+          "id": 41,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Chó",
+            "Núi",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 42,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Đất",
+            "Người",
+            "Lửa",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 43,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Sách",
+            "Trường học",
+            "Sông",
+            "Xe"
+          ]
+        },
+        {
+          "id": 44,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 45,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Sông",
+            "Đất",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 46,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Người",
+            "Sách",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 47,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 48,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Trường học",
+            "Nước"
+          ]
+        },
+        {
+          "id": 49,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sách",
+            "Gió",
+            "Núi",
+            "Chó"
+          ]
+        },
+        {
+          "id": 50,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Sông",
+            "Người"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "words": [
+        {
+          "id": 51,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Xe",
+            "Nước",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 52,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Núi",
+            "Xe",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 53,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Người",
+            "Trường học",
+            "Đất",
+            "Gió"
+          ]
+        },
+        {
+          "id": 54,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sông",
+            "Người",
+            "Nước",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 55,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Núi",
+            "Người",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 56,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Sông",
+            "Xe",
+            "Người",
+            "Sách"
+          ]
+        },
+        {
+          "id": 57,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Đất",
+            "Sông",
+            "Trường học",
+            "Sách"
+          ]
+        },
+        {
+          "id": 58,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Gió",
+            "Trường học",
+            "Xe",
+            "Người"
+          ]
+        },
+        {
+          "id": 59,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Xe",
+            "Núi",
+            "Sách",
+            "Chó"
+          ]
+        },
+        {
+          "id": 60,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Sông",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 61,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Gió",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 62,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Trường học",
+            "Xe",
+            "Người",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 63,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Núi",
+            "Gió",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 64,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Lửa",
+            "Nước",
+            "Gió"
+          ]
+        },
+        {
+          "id": 65,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Sông",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 66,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Núi",
+            "Đất",
+            "Nước"
+          ]
+        },
+        {
+          "id": 67,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 68,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Xe",
+            "Trường học",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 69,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Đất",
+            "Sách",
+            "Lửa",
+            "Sông"
+          ]
+        },
+        {
+          "id": 70,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Chó",
+            "Gió",
+            "Lửa",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 71,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Đất",
+            "Lửa",
+            "Mèo",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 72,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sông",
+            "Nước",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 73,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Gió",
+            "Lửa",
+            "Xe",
+            "Người"
+          ]
+        },
+        {
+          "id": 74,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Núi",
+            "Sông",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 75,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Đất",
+            "Gió"
+          ]
+        },
+        {
+          "id": 76,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Chó",
+            "Người",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 77,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Núi",
+            "Mèo",
+            "Gió"
+          ]
+        },
+        {
+          "id": 78,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Trường học",
+            "Chó"
+          ]
+        },
+        {
+          "id": 79,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Gió",
+            "Xe",
+            "Trường học",
+            "Sách"
+          ]
+        },
+        {
+          "id": 80,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Sông",
+            "Sách"
+          ]
+        },
+        {
+          "id": 81,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Xe",
+            "Chó",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 82,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Đất",
+            "Xe"
+          ]
+        },
+        {
+          "id": 83,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Sách",
+            "Sông"
+          ]
+        },
+        {
+          "id": 84,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Sông",
+            "Trường học",
+            "Xe"
+          ]
+        },
+        {
+          "id": 85,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sách",
+            "Lửa",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 86,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Người",
+            "Núi",
+            "Gió"
+          ]
+        },
+        {
+          "id": 87,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Gió",
+            "Xe",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 88,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Xe",
+            "Trường học",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 89,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Gió",
+            "Đất",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 90,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Đất",
+            "Sách",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 91,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Nước",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 92,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Đất",
+            "Trường học",
+            "Nước",
+            "Gió"
+          ]
+        },
+        {
+          "id": 93,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Lửa",
+            "Xe",
+            "Gió"
+          ]
+        },
+        {
+          "id": 94,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Người",
+            "Gió",
+            "Xe"
+          ]
+        },
+        {
+          "id": 95,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Sông",
+            "Nước",
+            "Xe",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 96,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 97,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Núi",
+            "Lửa",
+            "Xe",
+            "Nước"
+          ]
+        },
+        {
+          "id": 98,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Người",
+            "Sông",
+            "Xe"
+          ]
+        },
+        {
+          "id": 99,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Nước",
+            "Lửa",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 100,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Trường học",
+            "Mèo",
+            "Sông"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "words": [
+        {
+          "id": 101,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Nước",
+            "Xe",
+            "Sách",
+            "Gió"
+          ]
+        },
+        {
+          "id": 102,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sông",
+            "Đất",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 103,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 104,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Đất",
+            "Sách",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 105,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Đất",
+            "Gió",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 106,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Gió",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 107,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sách",
+            "Gió",
+            "Chó",
+            "Người"
+          ]
+        },
+        {
+          "id": 108,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Sách",
+            "Xe",
+            "Trường học",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 109,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Người",
+            "Sách",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 110,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Lửa",
+            "Nước",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 111,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Sách",
+            "Nước",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 112,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Trường học",
+            "Nước",
+            "Sách",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 113,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Người",
+            "Đất"
+          ]
+        },
+        {
+          "id": 114,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Núi",
+            "Đất",
+            "Lửa",
+            "Sách"
+          ]
+        },
+        {
+          "id": 115,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Gió",
+            "Xe",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 116,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Sách",
+            "Trường học",
+            "Xe"
+          ]
+        },
+        {
+          "id": 117,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Xe",
+            "Người",
+            "Chó",
+            "Nước"
+          ]
+        },
+        {
+          "id": 118,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Xe",
+            "Trường học",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 119,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Người",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 120,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Sông",
+            "Sách",
+            "Lửa",
+            "Gió"
+          ]
+        },
+        {
+          "id": 121,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Gió",
+            "Đất",
+            "Xe",
+            "Núi"
+          ]
+        },
+        {
+          "id": 122,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Người",
+            "Đất",
+            "Trường học",
+            "Xe"
+          ]
+        },
+        {
+          "id": 123,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Trường học",
+            "Sông"
+          ]
+        },
+        {
+          "id": 124,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Lửa",
+            "Núi",
+            "Nước",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 125,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Người",
+            "Gió",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 126,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Đất",
+            "Người",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 127,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Núi",
+            "Lửa",
+            "Người"
+          ]
+        },
+        {
+          "id": 128,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Người",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 129,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Gió",
+            "Núi",
+            "Xe",
+            "Nước"
+          ]
+        },
+        {
+          "id": 130,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Đất",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 131,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Đất",
+            "Sông",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 132,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sách",
+            "Trường học",
+            "Xe",
+            "Đất"
+          ]
+        },
+        {
+          "id": 133,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Nước",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 134,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Đất",
+            "Nước",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 135,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Sông",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 136,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Người",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 137,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Đất",
+            "Gió",
+            "Sông",
+            "Chó"
+          ]
+        },
+        {
+          "id": 138,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Chó",
+            "Nước",
+            "Sách",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 139,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Người",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 140,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Sông",
+            "Núi",
+            "Đất"
+          ]
+        },
+        {
+          "id": 141,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Núi",
+            "Đất",
+            "Gió",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 142,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 143,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Lửa",
+            "Sông",
+            "Trường học",
+            "Đất"
+          ]
+        },
+        {
+          "id": 144,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Nước",
+            "Chó",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 145,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Chó",
+            "Trường học",
+            "Gió"
+          ]
+        },
+        {
+          "id": 146,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Xe",
+            "Đất",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 147,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Người",
+            "Lửa",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 148,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Chó",
+            "Người"
+          ]
+        },
+        {
+          "id": 149,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Núi",
+            "Nước",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 150,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Gió",
+            "Người",
+            "Sông",
+            "Xe"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "words": [
+        {
+          "id": 151,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Sông",
+            "Núi",
+            "Đất"
+          ]
+        },
+        {
+          "id": 152,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Nước",
+            "Xe",
+            "Gió",
+            "Núi"
+          ]
+        },
+        {
+          "id": 153,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Sông",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 154,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Nước",
+            "Sông",
+            "Gió"
+          ]
+        },
+        {
+          "id": 155,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Gió",
+            "Mèo",
+            "Người",
+            "Sông"
+          ]
+        },
+        {
+          "id": 156,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Núi",
+            "Trường học",
+            "Đất"
+          ]
+        },
+        {
+          "id": 157,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Trường học",
+            "Xe",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 158,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Nước",
+            "Lửa",
+            "Gió",
+            "Núi"
+          ]
+        },
+        {
+          "id": 159,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Lửa",
+            "Trường học",
+            "Mèo",
+            "Nước"
+          ]
+        },
+        {
+          "id": 160,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Núi",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 161,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Nước",
+            "Lửa",
+            "Sách"
+          ]
+        },
+        {
+          "id": 162,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Trường học",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 163,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Đất",
+            "Mèo",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 164,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Người",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 165,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Trường học",
+            "Người",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 166,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Người",
+            "Nước",
+            "Sách",
+            "Sông"
+          ]
+        },
+        {
+          "id": 167,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Gió",
+            "Nước",
+            "Sách",
+            "Xe"
+          ]
+        },
+        {
+          "id": 168,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Trường học",
+            "Xe",
+            "Núi"
+          ]
+        },
+        {
+          "id": 169,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Đất",
+            "Sách",
+            "Chó",
+            "Núi"
+          ]
+        },
+        {
+          "id": 170,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Núi",
+            "Lửa",
+            "Chó"
+          ]
+        },
+        {
+          "id": 171,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Trường học",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 172,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Gió",
+            "Người",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 173,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Xe",
+            "Đất",
+            "Gió"
+          ]
+        },
+        {
+          "id": 174,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Lửa",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 175,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Nước",
+            "Đất",
+            "Sách"
+          ]
+        },
+        {
+          "id": 176,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Núi",
+            "Sông",
+            "Nước",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 177,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Đất",
+            "Lửa",
+            "Xe",
+            "Gió"
+          ]
+        },
+        {
+          "id": 178,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sách",
+            "Xe",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 179,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Gió",
+            "Sách",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 180,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Nước",
+            "Đất",
+            "Sách",
+            "Xe"
+          ]
+        },
+        {
+          "id": 181,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Đất",
+            "Sông",
+            "Xe",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 182,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Người",
+            "Núi",
+            "Đất",
+            "Sách"
+          ]
+        },
+        {
+          "id": 183,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Nước",
+            "Xe"
+          ]
+        },
+        {
+          "id": 184,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Xe",
+            "Núi"
+          ]
+        },
+        {
+          "id": 185,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Xe",
+            "Núi",
+            "Đất",
+            "Nước"
+          ]
+        },
+        {
+          "id": 186,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Sách",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 187,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Gió",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 188,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Trường học",
+            "Người",
+            "Núi",
+            "Đất"
+          ]
+        },
+        {
+          "id": 189,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Đất",
+            "Xe",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 190,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Núi",
+            "Lửa",
+            "Gió"
+          ]
+        },
+        {
+          "id": 191,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Nước",
+            "Núi",
+            "Đất",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 192,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Người",
+            "Đất",
+            "Xe",
+            "Nước"
+          ]
+        },
+        {
+          "id": 193,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Gió",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 194,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Sách",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 195,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Xe",
+            "Sách",
+            "Người",
+            "Núi"
+          ]
+        },
+        {
+          "id": 196,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Xe",
+            "Núi",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 197,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Sách",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 198,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Đất",
+            "Trường học",
+            "Xe",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 199,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Sông",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 200,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Trường học",
+            "Sông",
+            "Núi"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "words": [
+        {
+          "id": 201,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Gió",
+            "Núi",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 202,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Núi",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 203,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Người",
+            "Xe",
+            "Núi",
+            "Gió"
+          ]
+        },
+        {
+          "id": 204,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Nước",
+            "Người",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 205,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Gió",
+            "Trường học",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 206,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Trường học",
+            "Người",
+            "Chó",
+            "Sông"
+          ]
+        },
+        {
+          "id": 207,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Núi",
+            "Sách"
+          ]
+        },
+        {
+          "id": 208,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Người",
+            "Trường học",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 209,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Lửa",
+            "Sách",
+            "Gió"
+          ]
+        },
+        {
+          "id": 210,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Nước",
+            "Người",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 211,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Trường học",
+            "Xe",
+            "Đất",
+            "Núi"
+          ]
+        },
+        {
+          "id": 212,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Trường học",
+            "Xe",
+            "Đất",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 213,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Lửa",
+            "Xe",
+            "Sông"
+          ]
+        },
+        {
+          "id": 214,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Núi",
+            "Người"
+          ]
+        },
+        {
+          "id": 215,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sách",
+            "Đất",
+            "Trường học",
+            "Chó"
+          ]
+        },
+        {
+          "id": 216,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Xe",
+            "Trường học",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 217,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Nước",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 218,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Người",
+            "Sách",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 219,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 220,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Gió",
+            "Trường học",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 221,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Lửa",
+            "Sông",
+            "Người",
+            "Nước"
+          ]
+        },
+        {
+          "id": 222,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Đất",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 223,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Xe",
+            "Sách"
+          ]
+        },
+        {
+          "id": 224,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Núi",
+            "Lửa",
+            "Người"
+          ]
+        },
+        {
+          "id": 225,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Sông",
+            "Nước",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 226,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Trường học",
+            "Sách",
+            "Xe",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 227,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Người",
+            "Đất",
+            "Nước"
+          ]
+        },
+        {
+          "id": 228,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Xe",
+            "Đất",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 229,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Gió",
+            "Lửa",
+            "Người",
+            "Sông"
+          ]
+        },
+        {
+          "id": 230,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Sách",
+            "Gió",
+            "Núi"
+          ]
+        },
+        {
+          "id": 231,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sách",
+            "Đất",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 232,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Sách",
+            "Gió"
+          ]
+        },
+        {
+          "id": 233,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Trường học",
+            "Núi",
+            "Lửa",
+            "Sông"
+          ]
+        },
+        {
+          "id": 234,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sách",
+            "Sông",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 235,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 236,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Đất",
+            "Sách",
+            "Trường học",
+            "Gió"
+          ]
+        },
+        {
+          "id": 237,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Nước",
+            "Chó",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 238,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Sách",
+            "Nước",
+            "Trường học",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 239,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Gió",
+            "Núi",
+            "Đất",
+            "Sách"
+          ]
+        },
+        {
+          "id": 240,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Đất",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 241,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Đất",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 242,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Người",
+            "Xe",
+            "Đất",
+            "Núi"
+          ]
+        },
+        {
+          "id": 243,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Nước",
+            "Núi",
+            "Trường học",
+            "Sông"
+          ]
+        },
+        {
+          "id": 244,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Đất",
+            "Xe",
+            "Trường học",
+            "Sách"
+          ]
+        },
+        {
+          "id": 245,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Gió",
+            "Lửa",
+            "Núi",
+            "Người"
+          ]
+        },
+        {
+          "id": 246,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Đất",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 247,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Núi",
+            "Sông",
+            "Người",
+            "Đất"
+          ]
+        },
+        {
+          "id": 248,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Nước",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 249,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Mèo",
+            "Người"
+          ]
+        },
+        {
+          "id": 250,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Người",
+            "Đất",
+            "Gió"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "words": [
+        {
+          "id": 251,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Xe",
+            "Núi",
+            "Chó",
+            "Nước"
+          ]
+        },
+        {
+          "id": 252,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Gió",
+            "Sách",
+            "Sông",
+            "Xe"
+          ]
+        },
+        {
+          "id": 253,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Sông",
+            "Người",
+            "Đất",
+            "Xe"
+          ]
+        },
+        {
+          "id": 254,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Gió",
+            "Núi",
+            "Trường học",
+            "Nước"
+          ]
+        },
+        {
+          "id": 255,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Nước",
+            "Xe",
+            "Gió",
+            "Sông"
+          ]
+        },
+        {
+          "id": 256,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Đất",
+            "Người"
+          ]
+        },
+        {
+          "id": 257,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Núi",
+            "Người",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 258,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Đất",
+            "Xe",
+            "Núi"
+          ]
+        },
+        {
+          "id": 259,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Gió",
+            "Đất",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 260,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Gió",
+            "Người",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 261,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Gió",
+            "Xe",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 262,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Xe",
+            "Người"
+          ]
+        },
+        {
+          "id": 263,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 264,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Lửa",
+            "Người"
+          ]
+        },
+        {
+          "id": 265,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Xe",
+            "Người",
+            "Trường học",
+            "Núi"
+          ]
+        },
+        {
+          "id": 266,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Xe",
+            "Sông",
+            "Mèo",
+            "Sách"
+          ]
+        },
+        {
+          "id": 267,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Xe",
+            "Sách",
+            "Đất"
+          ]
+        },
+        {
+          "id": 268,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Núi",
+            "Lửa",
+            "Gió"
+          ]
+        },
+        {
+          "id": 269,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Người",
+            "Xe",
+            "Núi",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 270,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Gió",
+            "Núi"
+          ]
+        },
+        {
+          "id": 271,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Người",
+            "Đất",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 272,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Núi",
+            "Sách",
+            "Người",
+            "Sông"
+          ]
+        },
+        {
+          "id": 273,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 274,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Người",
+            "Xe"
+          ]
+        },
+        {
+          "id": 275,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Sông",
+            "Người",
+            "Nước"
+          ]
+        },
+        {
+          "id": 276,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Người",
+            "Gió",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 277,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Gió",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 278,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Xe",
+            "Núi",
+            "Sách"
+          ]
+        },
+        {
+          "id": 279,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Người",
+            "Đất",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 280,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Người",
+            "Mèo",
+            "Gió"
+          ]
+        },
+        {
+          "id": 281,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Trường học",
+            "Xe",
+            "Gió"
+          ]
+        },
+        {
+          "id": 282,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Xe",
+            "Gió",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 283,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Xe",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 284,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Trường học",
+            "Núi",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 285,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Lửa",
+            "Xe",
+            "Chó",
+            "Núi"
+          ]
+        },
+        {
+          "id": 286,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Người",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 287,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Lửa",
+            "Gió",
+            "Người"
+          ]
+        },
+        {
+          "id": 288,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sách",
+            "Nước",
+            "Núi",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 289,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Trường học",
+            "Đất",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 290,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Gió",
+            "Sách",
+            "Xe",
+            "Đất"
+          ]
+        },
+        {
+          "id": 291,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Núi",
+            "Đất",
+            "Người",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 292,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Xe",
+            "Núi",
+            "Gió"
+          ]
+        },
+        {
+          "id": 293,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Núi",
+            "Trường học",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 294,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Người",
+            "Trường học",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 295,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Người",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 296,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Người",
+            "Gió",
+            "Sách",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 297,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Nước",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 298,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Lửa",
+            "Xe",
+            "Chó"
+          ]
+        },
+        {
+          "id": 299,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sông",
+            "Xe",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 300,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Sông",
+            "Nước"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "words": [
+        {
+          "id": 301,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Xe",
+            "Sông"
+          ]
+        },
+        {
+          "id": 302,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Sông",
+            "Xe",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 303,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Nước",
+            "Gió",
+            "Chó",
+            "Núi"
+          ]
+        },
+        {
+          "id": 304,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Gió",
+            "Trường học",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 305,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Nước",
+            "Sách",
+            "Sông",
+            "Đất"
+          ]
+        },
+        {
+          "id": 306,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Người",
+            "Núi",
+            "Đất",
+            "Sông"
+          ]
+        },
+        {
+          "id": 307,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Núi",
+            "Xe",
+            "Người"
+          ]
+        },
+        {
+          "id": 308,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Nước",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 309,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Lửa",
+            "Núi",
+            "Sách",
+            "Đất"
+          ]
+        },
+        {
+          "id": 310,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Nước",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 311,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Núi",
+            "Trường học",
+            "Đất",
+            "Sông"
+          ]
+        },
+        {
+          "id": 312,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Người",
+            "Xe"
+          ]
+        },
+        {
+          "id": 313,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Đất",
+            "Gió",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 314,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Người",
+            "Gió",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 315,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Người",
+            "Lửa",
+            "Xe",
+            "Sách"
+          ]
+        },
+        {
+          "id": 316,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Lửa",
+            "Trường học",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 317,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Lửa",
+            "Người",
+            "Trường học",
+            "Chó"
+          ]
+        },
+        {
+          "id": 318,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Trường học",
+            "Mèo",
+            "Xe",
+            "Gió"
+          ]
+        },
+        {
+          "id": 319,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Xe",
+            "Trường học",
+            "Đất"
+          ]
+        },
+        {
+          "id": 320,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Xe",
+            "Sông",
+            "Người",
+            "Nước"
+          ]
+        },
+        {
+          "id": 321,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Người",
+            "Nước",
+            "Trường học",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 322,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Gió",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 323,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Gió",
+            "Trường học",
+            "Mèo",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 324,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Nước",
+            "Người"
+          ]
+        },
+        {
+          "id": 325,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Mèo",
+            "Gió"
+          ]
+        },
+        {
+          "id": 326,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sách",
+            "Nước",
+            "Chó",
+            "Gió"
+          ]
+        },
+        {
+          "id": 327,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Đất",
+            "Xe",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 328,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Đất",
+            "Sông"
+          ]
+        },
+        {
+          "id": 329,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Sách",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 330,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Sông",
+            "Gió",
+            "Đất"
+          ]
+        },
+        {
+          "id": 331,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Người",
+            "Nước",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 332,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sông",
+            "Lửa",
+            "Nước",
+            "Người"
+          ]
+        },
+        {
+          "id": 333,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Người",
+            "Nước",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 334,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Trường học",
+            "Xe",
+            "Người",
+            "Sông"
+          ]
+        },
+        {
+          "id": 335,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Đất",
+            "Gió",
+            "Núi"
+          ]
+        },
+        {
+          "id": 336,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Xe",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 337,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Gió",
+            "Người",
+            "Nước"
+          ]
+        },
+        {
+          "id": 338,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Người",
+            "Sông",
+            "Xe",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 339,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Núi",
+            "Đất",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 340,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Gió",
+            "Núi",
+            "Người"
+          ]
+        },
+        {
+          "id": 341,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Gió",
+            "Nước",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 342,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Sông",
+            "Xe",
+            "Gió",
+            "Đất"
+          ]
+        },
+        {
+          "id": 343,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 344,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Gió",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 345,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Sách",
+            "Núi",
+            "Trường học",
+            "Sông"
+          ]
+        },
+        {
+          "id": 346,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Đất",
+            "Sách",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 347,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Xe",
+            "Chó",
+            "Trường học",
+            "Nước"
+          ]
+        },
+        {
+          "id": 348,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Trường học",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 349,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Gió",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 350,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Sông",
+            "Xe",
+            "Trường học"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "words": [
+        {
+          "id": 351,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Gió",
+            "Người"
+          ]
+        },
+        {
+          "id": 352,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Nước",
+            "Trường học",
+            "Đất"
+          ]
+        },
+        {
+          "id": 353,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Người",
+            "Núi"
+          ]
+        },
+        {
+          "id": 354,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Nước",
+            "Trường học",
+            "Đất",
+            "Xe"
+          ]
+        },
+        {
+          "id": 355,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Nước",
+            "Sông",
+            "Mèo",
+            "Gió"
+          ]
+        },
+        {
+          "id": 356,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Người",
+            "Nước",
+            "Gió"
+          ]
+        },
+        {
+          "id": 357,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Gió",
+            "Xe",
+            "Lửa",
+            "Nước"
+          ]
+        },
+        {
+          "id": 358,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Núi",
+            "Sông",
+            "Nước"
+          ]
+        },
+        {
+          "id": 359,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sông",
+            "Người",
+            "Trường học",
+            "Sách"
+          ]
+        },
+        {
+          "id": 360,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Nước",
+            "Trường học",
+            "Núi",
+            "Sách"
+          ]
+        },
+        {
+          "id": 361,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Gió",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 362,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Đất",
+            "Sách",
+            "Lửa",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 363,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Đất",
+            "Xe",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 364,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Gió",
+            "Sách",
+            "Nước",
+            "Chó"
+          ]
+        },
+        {
+          "id": 365,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Sông",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 366,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Người",
+            "Sách",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 367,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Nước",
+            "Xe",
+            "Trường học",
+            "Đất"
+          ]
+        },
+        {
+          "id": 368,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Sách",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 369,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Gió",
+            "Người",
+            "Sách",
+            "Sông"
+          ]
+        },
+        {
+          "id": 370,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Gió",
+            "Sông",
+            "Sách",
+            "Chó"
+          ]
+        },
+        {
+          "id": 371,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sách",
+            "Xe",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 372,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 373,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sách",
+            "Núi",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 374,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Núi",
+            "Gió",
+            "Xe"
+          ]
+        },
+        {
+          "id": 375,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Người",
+            "Núi",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 376,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Núi",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 377,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Người",
+            "Gió",
+            "Sông"
+          ]
+        },
+        {
+          "id": 378,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Lửa",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 379,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 380,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Người",
+            "Trường học",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 381,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Xe",
+            "Trường học",
+            "Mèo",
+            "Đất"
+          ]
+        },
+        {
+          "id": 382,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Xe",
+            "Nước",
+            "Trường học",
+            "Sách"
+          ]
+        },
+        {
+          "id": 383,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Người",
+            "Sông",
+            "Trường học",
+            "Mèo"
+          ]
+        },
+        {
+          "id": 384,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Nước",
+            "Lửa",
+            "Sách",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 385,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Núi",
+            "Người",
+            "Sách",
+            "Xe"
+          ]
+        },
+        {
+          "id": 386,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Xe",
+            "Núi",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 387,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Núi",
+            "Chó",
+            "Người",
+            "Sách"
+          ]
+        },
+        {
+          "id": 388,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Chó",
+            "Đất"
+          ]
+        },
+        {
+          "id": 389,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Người",
+            "Núi"
+          ]
+        },
+        {
+          "id": 390,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Núi",
+            "Người",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 391,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Nước",
+            "Sách",
+            "Xe"
+          ]
+        },
+        {
+          "id": 392,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Núi",
+            "Sách",
+            "Nước"
+          ]
+        },
+        {
+          "id": 393,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Xe",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 394,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Người",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 395,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Chó",
+            "Người",
+            "Đất",
+            "Sách"
+          ]
+        },
+        {
+          "id": 396,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Sông",
+            "Người",
+            "Sách"
+          ]
+        },
+        {
+          "id": 397,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Đất",
+            "Sông",
+            "Nước",
+            "Người"
+          ]
+        },
+        {
+          "id": 398,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Người",
+            "Lửa",
+            "Sách",
+            "Xe"
+          ]
+        },
+        {
+          "id": 399,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 400,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Nước",
+            "Lửa"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "words": [
+        {
+          "id": 401,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Người",
+            "Nước",
+            "Sách"
+          ]
+        },
+        {
+          "id": 402,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Núi",
+            "Sách",
+            "Xe",
+            "Nước"
+          ]
+        },
+        {
+          "id": 403,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Trường học",
+            "Đất",
+            "Chó",
+            "Núi"
+          ]
+        },
+        {
+          "id": 404,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Người",
+            "Nước",
+            "Gió"
+          ]
+        },
+        {
+          "id": 405,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Người",
+            "Đất",
+            "Núi"
+          ]
+        },
+        {
+          "id": 406,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Xe",
+            "Sách",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 407,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Nước",
+            "Lửa",
+            "Sông"
+          ]
+        },
+        {
+          "id": 408,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Đất",
+            "Chó",
+            "Lửa",
+            "Gió"
+          ]
+        },
+        {
+          "id": 409,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Lửa",
+            "Xe",
+            "Trường học",
+            "Gió"
+          ]
+        },
+        {
+          "id": 410,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Nước",
+            "Sông",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 411,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Trường học",
+            "Nước",
+            "Sông",
+            "Sách"
+          ]
+        },
+        {
+          "id": 412,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sách",
+            "Lửa",
+            "Trường học",
+            "Núi"
+          ]
+        },
+        {
+          "id": 413,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Người",
+            "Nước",
+            "Gió"
+          ]
+        },
+        {
+          "id": 414,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Núi",
+            "Gió",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 415,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Xe",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 416,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Đất",
+            "Gió",
+            "Xe",
+            "Người"
+          ]
+        },
+        {
+          "id": 417,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Nước",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 418,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Đất",
+            "Mèo",
+            "Người",
+            "Núi"
+          ]
+        },
+        {
+          "id": 419,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Đất",
+            "Xe",
+            "Sông",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 420,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Nước",
+            "Xe",
+            "Núi",
+            "Sông"
+          ]
+        },
+        {
+          "id": 421,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Người",
+            "Nước",
+            "Gió",
+            "Sách"
+          ]
+        },
+        {
+          "id": 422,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Sách",
+            "Núi",
+            "Đất"
+          ]
+        },
+        {
+          "id": 423,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Trường học",
+            "Núi",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 424,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Xe",
+            "Trường học",
+            "Gió"
+          ]
+        },
+        {
+          "id": 425,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Chó",
+            "Gió",
+            "Lửa",
+            "Xe"
+          ]
+        },
+        {
+          "id": 426,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Sông",
+            "Người",
+            "Núi",
+            "Xe"
+          ]
+        },
+        {
+          "id": 427,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Gió",
+            "Người",
+            "Núi",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 428,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Núi",
+            "Sông",
+            "Đất",
+            "Người"
+          ]
+        },
+        {
+          "id": 429,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Nước",
+            "Người",
+            "Sông"
+          ]
+        },
+        {
+          "id": 430,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sách",
+            "Gió",
+            "Nước",
+            "Sông"
+          ]
+        },
+        {
+          "id": 431,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Gió",
+            "Lửa",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 432,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Nước",
+            "Người",
+            "Đất"
+          ]
+        },
+        {
+          "id": 433,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Người",
+            "Gió",
+            "Núi",
+            "Sông"
+          ]
+        },
+        {
+          "id": 434,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Núi",
+            "Gió",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 435,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Người",
+            "Sông",
+            "Gió",
+            "Nước"
+          ]
+        },
+        {
+          "id": 436,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Chó",
+            "Trường học",
+            "Xe",
+            "Nước"
+          ]
+        },
+        {
+          "id": 437,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Trường học",
+            "Sách",
+            "Xe",
+            "Núi"
+          ]
+        },
+        {
+          "id": 438,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Nước",
+            "Sông",
+            "Sách"
+          ]
+        },
+        {
+          "id": 439,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Nước",
+            "Mèo",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 440,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Lửa",
+            "Sách",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 441,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Lửa",
+            "Sông",
+            "Đất"
+          ]
+        },
+        {
+          "id": 442,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Xe",
+            "Người",
+            "Sách",
+            "Núi"
+          ]
+        },
+        {
+          "id": 443,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Gió",
+            "Xe",
+            "Sách"
+          ]
+        },
+        {
+          "id": 444,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Sách",
+            "Xe",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 445,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Trường học",
+            "Lửa",
+            "Đất"
+          ]
+        },
+        {
+          "id": 446,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Người",
+            "Sông",
+            "Gió"
+          ]
+        },
+        {
+          "id": 447,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Sông",
+            "Chó",
+            "Người",
+            "Xe"
+          ]
+        },
+        {
+          "id": 448,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Người",
+            "Mèo",
+            "Nước"
+          ]
+        },
+        {
+          "id": 449,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Sách",
+            "Đất",
+            "Nước",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 450,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Xe",
+            "Mèo"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "words": [
+        {
+          "id": 451,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Lửa",
+            "Nước",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 452,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Sông",
+            "Núi",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 453,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Sách",
+            "Nước",
+            "Người",
+            "Đất"
+          ]
+        },
+        {
+          "id": 454,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Trường học",
+            "Sách",
+            "Núi",
+            "Nước"
+          ]
+        },
+        {
+          "id": 455,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Người",
+            "Nước",
+            "Núi",
+            "Sông"
+          ]
+        },
+        {
+          "id": 456,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Núi",
+            "Lửa",
+            "Sách",
+            "Đất"
+          ]
+        },
+        {
+          "id": 457,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Đất",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 458,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Mèo",
+            "Trường học",
+            "Đất",
+            "Nước"
+          ]
+        },
+        {
+          "id": 459,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Nước",
+            "Mèo",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 460,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Sách",
+            "Người"
+          ]
+        },
+        {
+          "id": 461,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Sách",
+            "Trường học",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 462,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 463,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Núi",
+            "Nước",
+            "Người",
+            "Sách"
+          ]
+        },
+        {
+          "id": 464,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Núi",
+            "Xe",
+            "Sách",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 465,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Đất",
+            "Sông",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 466,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Lửa",
+            "Nước",
+            "Đất"
+          ]
+        },
+        {
+          "id": 467,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Gió",
+            "Sông",
+            "Đất",
+            "Xe"
+          ]
+        },
+        {
+          "id": 468,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Xe",
+            "Người",
+            "Lửa",
+            "Sông"
+          ]
+        },
+        {
+          "id": 469,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Đất",
+            "Chó",
+            "Người",
+            "Gió"
+          ]
+        },
+        {
+          "id": 470,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Nước",
+            "Sông",
+            "Sách"
+          ]
+        },
+        {
+          "id": 471,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Người",
+            "Đất",
+            "Trường học",
+            "Sách"
+          ]
+        },
+        {
+          "id": 472,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Núi",
+            "Trường học",
+            "Sông",
+            "Người"
+          ]
+        },
+        {
+          "id": 473,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Núi",
+            "Sông",
+            "Người",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 474,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sách",
+            "Sông",
+            "Mèo",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 475,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Người",
+            "Sách",
+            "Lửa",
+            "Sông"
+          ]
+        },
+        {
+          "id": 476,
+          "jp": "車",
+          "romaji": "kuruma",
+          "correct": "Xe",
+          "options": [
+            "Xe",
+            "Núi",
+            "Nước",
+            "Người"
+          ]
+        },
+        {
+          "id": 477,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Trường học",
+            "Sách",
+            "Đất",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 478,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Nước",
+            "Sách",
+            "Người",
+            "Núi"
+          ]
+        },
+        {
+          "id": 479,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Nước",
+            "Xe",
+            "Gió",
+            "Chó"
+          ]
+        },
+        {
+          "id": 480,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Sông",
+            "Trường học",
+            "Núi",
+            "Gió"
+          ]
+        },
+        {
+          "id": 481,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Trường học",
+            "Gió",
+            "Chó",
+            "Người"
+          ]
+        },
+        {
+          "id": 482,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Nước",
+            "Người",
+            "Lửa",
+            "Núi"
+          ]
+        },
+        {
+          "id": 483,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Nước",
+            "Gió",
+            "Đất"
+          ]
+        },
+        {
+          "id": 484,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Xe",
+            "Người",
+            "Chó",
+            "Nước"
+          ]
+        },
+        {
+          "id": 485,
+          "jp": "山",
+          "romaji": "yama",
+          "correct": "Núi",
+          "options": [
+            "Nước",
+            "Trường học",
+            "Đất",
+            "Núi"
+          ]
+        },
+        {
+          "id": 486,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Trường học",
+            "Người",
+            "Lửa",
+            "Gió"
+          ]
+        },
+        {
+          "id": 487,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Người",
+            "Trường học",
+            "Nước",
+            "Núi"
+          ]
+        },
+        {
+          "id": 488,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Trường học",
+            "Sông",
+            "Sách",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 489,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Nước",
+            "Sách",
+            "Đất",
+            "Trường học"
+          ]
+        },
+        {
+          "id": 490,
+          "jp": "学校",
+          "romaji": "gakkou",
+          "correct": "Trường học",
+          "options": [
+            "Sông",
+            "Lửa",
+            "Trường học",
+            "Người"
+          ]
+        },
+        {
+          "id": 491,
+          "jp": "犬",
+          "romaji": "inu",
+          "correct": "Chó",
+          "options": [
+            "Gió",
+            "Nước",
+            "Sông",
+            "Chó"
+          ]
+        },
+        {
+          "id": 492,
+          "jp": "人",
+          "romaji": "hito",
+          "correct": "Người",
+          "options": [
+            "Núi",
+            "Lửa",
+            "Đất",
+            "Người"
+          ]
+        },
+        {
+          "id": 493,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Xe",
+            "Mèo",
+            "Người",
+            "Nước"
+          ]
+        },
+        {
+          "id": 494,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Xe",
+            "Sông",
+            "Mèo",
+            "Sách"
+          ]
+        },
+        {
+          "id": 495,
+          "jp": "水",
+          "romaji": "mizu",
+          "correct": "Nước",
+          "options": [
+            "Nước",
+            "Sách",
+            "Xe",
+            "Đất"
+          ]
+        },
+        {
+          "id": 496,
+          "jp": "川",
+          "romaji": "kawa",
+          "correct": "Sông",
+          "options": [
+            "Xe",
+            "Sách",
+            "Sông",
+            "Núi"
+          ]
+        },
+        {
+          "id": 497,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Nước",
+            "Sách",
+            "Núi",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 498,
+          "jp": "猫",
+          "romaji": "neko",
+          "correct": "Mèo",
+          "options": [
+            "Sông",
+            "Mèo",
+            "Đất",
+            "Xe"
+          ]
+        },
+        {
+          "id": 499,
+          "jp": "本",
+          "romaji": "hon",
+          "correct": "Sách",
+          "options": [
+            "Người",
+            "Sách",
+            "Núi",
+            "Lửa"
+          ]
+        },
+        {
+          "id": 500,
+          "jp": "火",
+          "romaji": "hi",
+          "correct": "Lửa",
+          "options": [
+            "Lửa",
+            "Xe",
+            "Sông",
+            "Nước"
+          ]
+        }
+      ]
+    }
+  ]
+}

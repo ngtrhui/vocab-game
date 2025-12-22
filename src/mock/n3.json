@@ -1,0 +1,6055 @@
+{
+  "level": "N3",
+  "stages": [
+    {
+      "stage": 1,
+      "words": [
+        {
+          "id": 1,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 2,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 3,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 4,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 5,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Quyết định",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 6,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Mối quan hệ",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 7,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Lý do",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 8,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Lý do",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 9,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 10,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 11,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Ảnh hưởng",
+            "Quyết định",
+            "An toàn",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 12,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Quyết định",
+            "Nguy hiểm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 13,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 14,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 15,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 16,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 17,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Lý do",
+            "Nguy hiểm",
+            "Tình hình",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 18,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "An toàn",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 19,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Lý do",
+            "Kinh nghiệm",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 20,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 21,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Quyết định",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 22,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Kinh nghiệm",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 23,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Ảnh hưởng",
+            "Tình hình",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 24,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 25,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 26,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Mối quan hệ",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 27,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Quyết định",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 28,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "An toàn",
+            "Ảnh hưởng",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 29,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Giảm xuống",
+            "Lý do",
+            "Quyết định",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 30,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tăng lên",
+            "Quyết định",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 31,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 32,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 33,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 34,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Ảnh hưởng",
+            "Quyết định",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 35,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 36,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "An toàn",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 37,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 38,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Quyết định",
+            "Giảm xuống",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 39,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 40,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Lý do",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 41,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 42,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Kinh nghiệm",
+            "Lý do",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 43,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Ảnh hưởng",
+            "Quyết định",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 44,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 45,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 46,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "An toàn",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 47,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 48,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 49,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Lý do",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 50,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Mối quan hệ",
+            "Giảm xuống",
+            "An toàn",
+            "Tăng lên"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "words": [
+        {
+          "id": 51,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 52,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Quyết định",
+            "Nguy hiểm",
+            "Tình hình",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 53,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 54,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Quyết định",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 55,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Mối quan hệ",
+            "An toàn",
+            "Quyết định",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 56,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 57,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 58,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Tăng lên",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 59,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 60,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 61,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Tình hình",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 62,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 63,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "An toàn",
+            "Lý do",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 64,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Lý do",
+            "Quyết định",
+            "Mối quan hệ",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 65,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 66,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "An toàn",
+            "Tình hình",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 67,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Lý do",
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 68,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "An toàn",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 69,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Lý do",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 70,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Mối quan hệ",
+            "An toàn",
+            "Nguy hiểm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 71,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Lý do",
+            "Giảm xuống",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 72,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "An toàn",
+            "Nguy hiểm",
+            "Tình hình",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 73,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tình hình",
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 74,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 75,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 76,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 77,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 78,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 79,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "An toàn",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 80,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 81,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "An toàn",
+            "Tình hình",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 82,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 83,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Ảnh hưởng",
+            "Lý do",
+            "An toàn",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 84,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 85,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 86,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 87,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 88,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Nguy hiểm",
+            "Tăng lên",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 89,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 90,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Mối quan hệ",
+            "Tăng lên",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 91,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Tăng lên",
+            "Quyết định",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 92,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "An toàn",
+            "Giảm xuống",
+            "Lý do",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 93,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Quyết định",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 94,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Tăng lên",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 95,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 96,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 97,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Lý do",
+            "Giảm xuống",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 98,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Kinh nghiệm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 99,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Nguy hiểm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 100,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "An toàn"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "words": [
+        {
+          "id": 101,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Lý do",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 102,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Tình hình",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 103,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 104,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 105,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 106,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "An toàn",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 107,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 108,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Quyết định",
+            "Mối quan hệ",
+            "Tình hình",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 109,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 110,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Quyết định",
+            "Tăng lên",
+            "Lý do",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 111,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 112,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Quyết định",
+            "Tăng lên",
+            "Nguy hiểm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 113,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "Giảm xuống",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 114,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 115,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Quyết định",
+            "Ảnh hưởng",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 116,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 117,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Tình hình",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 118,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Lý do",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 119,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Quyết định",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 120,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 121,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 122,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Mối quan hệ",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 123,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Quyết định",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 124,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 125,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Giảm xuống",
+            "Lý do",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 126,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 127,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 128,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 129,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "An toàn",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 130,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Quyết định",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 131,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 132,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Lý do",
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 133,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Ảnh hưởng",
+            "Lý do",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 134,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Tình hình",
+            "Mối quan hệ",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 135,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Ảnh hưởng",
+            "Tình hình",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 136,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 137,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "An toàn",
+            "Lý do",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 138,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Kinh nghiệm",
+            "Lý do",
+            "Quyết định",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 139,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Lý do",
+            "Tình hình",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 140,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 141,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Mối quan hệ",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 142,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Nguy hiểm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 143,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Quyết định",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 144,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 145,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Lý do",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 146,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 147,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Tăng lên",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 148,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Lý do",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 149,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 150,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "An toàn",
+            "Tình hình",
+            "Nguy hiểm",
+            "Giảm xuống"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "words": [
+        {
+          "id": 151,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Tăng lên",
+            "Quyết định",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 152,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 153,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Lý do",
+            "Tình hình",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 154,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 155,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "An toàn",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 156,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 157,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Tình hình",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 158,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 159,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Quyết định",
+            "Giảm xuống",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 160,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Lý do",
+            "Quyết định",
+            "Mối quan hệ",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 161,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Lý do",
+            "Tình hình",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 162,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Nguy hiểm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 163,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Quyết định",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 164,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "An toàn",
+            "Ảnh hưởng",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 165,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Lý do",
+            "Mối quan hệ",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 166,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tăng lên",
+            "Lý do",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 167,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "An toàn",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 168,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "An toàn",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 169,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Giảm xuống",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 170,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Quyết định",
+            "An toàn",
+            "Kinh nghiệm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 171,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "An toàn",
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 172,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Lý do",
+            "An toàn",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 173,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 174,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 175,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "An toàn",
+            "Lý do",
+            "Ảnh hưởng",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 176,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 177,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Tình hình",
+            "Nguy hiểm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 178,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Tình hình",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 179,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Kinh nghiệm",
+            "Quyết định",
+            "Ảnh hưởng",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 180,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "An toàn",
+            "Nguy hiểm",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 181,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 182,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 183,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Kinh nghiệm",
+            "Quyết định",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 184,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "An toàn",
+            "Lý do",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 185,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Lý do",
+            "Nguy hiểm",
+            "Tình hình",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 186,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 187,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Lý do",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 188,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 189,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 190,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Giảm xuống",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 191,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Tình hình",
+            "Mối quan hệ",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 192,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Lý do",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 193,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Tăng lên",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 194,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "Ảnh hưởng",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 195,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Quyết định",
+            "An toàn",
+            "Tình hình",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 196,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 197,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 198,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Nguy hiểm",
+            "An toàn",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 199,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 200,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Quyết định"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "words": [
+        {
+          "id": 201,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "An toàn",
+            "Quyết định",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 202,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Nguy hiểm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 203,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "An toàn",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 204,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "An toàn",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 205,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Lý do",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 206,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Tình hình",
+            "Quyết định",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 207,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Tăng lên",
+            "Nguy hiểm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 208,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 209,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 210,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Quyết định",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 211,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Mối quan hệ",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 212,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Lý do",
+            "Quyết định",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 213,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 214,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Tình hình",
+            "Ảnh hưởng",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 215,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Nguy hiểm",
+            "Lý do",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 216,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tăng lên",
+            "Nguy hiểm",
+            "An toàn",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 217,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Lý do",
+            "Tình hình",
+            "An toàn",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 218,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 219,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 220,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 221,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Quyết định",
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 222,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tình hình",
+            "Nguy hiểm",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 223,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Lý do",
+            "Nguy hiểm",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 224,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Kinh nghiệm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 225,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tăng lên",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 226,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 227,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 228,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Tình hình",
+            "Quyết định",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 229,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Mối quan hệ",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 230,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 231,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 232,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 233,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 234,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Lý do",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 235,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 236,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Quyết định",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 237,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 238,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Mối quan hệ",
+            "Quyết định",
+            "Nguy hiểm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 239,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 240,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tăng lên",
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 241,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Quyết định",
+            "Nguy hiểm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 242,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Lý do",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 243,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 244,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 245,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Mối quan hệ",
+            "Tăng lên",
+            "Lý do",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 246,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 247,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 248,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 249,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 250,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "words": [
+        {
+          "id": 251,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Mối quan hệ",
+            "Giảm xuống",
+            "An toàn",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 252,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 253,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Tăng lên",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 254,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 255,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tình hình",
+            "Quyết định",
+            "Kinh nghiệm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 256,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Giảm xuống",
+            "Tăng lên",
+            "Lý do",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 257,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "Mối quan hệ",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 258,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 259,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 260,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 261,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 262,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "An toàn",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 263,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Lý do",
+            "Ảnh hưởng",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 264,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Mối quan hệ",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 265,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Quyết định",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 266,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Ảnh hưởng",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 267,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Ảnh hưởng",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 268,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 269,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "Tình hình",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 270,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Giảm xuống",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 271,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tình hình",
+            "An toàn",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 272,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "An toàn",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 273,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 274,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Mối quan hệ",
+            "Quyết định",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 275,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Giảm xuống",
+            "Quyết định",
+            "Tình hình",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 276,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "Lý do",
+            "Tình hình",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 277,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 278,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 279,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 280,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Quyết định",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 281,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 282,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Quyết định",
+            "Tăng lên",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 283,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Lý do",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 284,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 285,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "An toàn",
+            "Giảm xuống",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 286,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Nguy hiểm",
+            "Tình hình",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 287,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 288,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "An toàn",
+            "Quyết định",
+            "Tình hình",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 289,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 290,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 291,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 292,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Tăng lên",
+            "An toàn",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 293,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Tình hình",
+            "Lý do",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 294,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "An toàn",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 295,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tình hình",
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 296,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Tăng lên",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 297,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 298,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Quyết định",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 299,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tăng lên",
+            "Giảm xuống",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 300,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "An toàn",
+            "Quyết định",
+            "Kinh nghiệm",
+            "Lý do"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "words": [
+        {
+          "id": 301,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 302,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 303,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Quyết định",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 304,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Ảnh hưởng",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 305,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Lý do",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 306,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Kinh nghiệm",
+            "Lý do",
+            "Ảnh hưởng",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 307,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 308,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 309,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "An toàn",
+            "Nguy hiểm",
+            "Lý do",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 310,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "An toàn",
+            "Giảm xuống",
+            "Lý do",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 311,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Lý do",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 312,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 313,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Tình hình",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 314,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Lý do",
+            "Quyết định",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 315,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Tình hình",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 316,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Kinh nghiệm",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 317,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 318,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "An toàn",
+            "Tăng lên",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 319,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Giảm xuống",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 320,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 321,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 322,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Tình hình",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 323,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Quyết định",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 324,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "An toàn",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 325,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Giảm xuống",
+            "Lý do",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 326,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Nguy hiểm",
+            "Tình hình",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 327,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Giảm xuống",
+            "Tình hình",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 328,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Giảm xuống",
+            "Quyết định",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 329,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Lý do",
+            "Tình hình",
+            "Tăng lên",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 330,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 331,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Tình hình",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 332,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 333,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 334,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Nguy hiểm",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 335,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 336,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 337,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Quyết định",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 338,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 339,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Quyết định",
+            "Ảnh hưởng",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 340,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "Tăng lên",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 341,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 342,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 343,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Kinh nghiệm",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 344,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 345,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tình hình",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 346,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "An toàn",
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 347,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Tình hình",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 348,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 349,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 350,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "words": [
+        {
+          "id": 351,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Mối quan hệ",
+            "Tăng lên",
+            "An toàn",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 352,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 353,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Quyết định",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 354,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Lý do",
+            "Tăng lên",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 355,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Giảm xuống",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 356,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 357,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Nguy hiểm",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 358,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 359,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Tình hình",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 360,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Kinh nghiệm",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 361,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Lý do",
+            "An toàn",
+            "Quyết định",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 362,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "Ảnh hưởng",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 363,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "An toàn",
+            "Kinh nghiệm",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 364,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 365,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Giảm xuống",
+            "Tăng lên",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 366,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 367,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "An toàn",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 368,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "An toàn",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 369,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Lý do",
+            "Nguy hiểm",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 370,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Lý do",
+            "Ảnh hưởng",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 371,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Lý do",
+            "Tăng lên",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 372,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 373,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Lý do",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 374,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Tăng lên",
+            "Lý do",
+            "Mối quan hệ",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 375,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Lý do",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 376,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 377,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Quyết định",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 378,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "An toàn",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 379,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Tăng lên",
+            "Quyết định",
+            "An toàn",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 380,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Giảm xuống",
+            "Tình hình",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 381,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 382,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 383,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Tăng lên",
+            "An toàn",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 384,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Quyết định",
+            "Ảnh hưởng",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 385,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Quyết định",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 386,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Quyết định",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 387,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 388,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Tăng lên",
+            "Lý do",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 389,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tăng lên",
+            "Lý do",
+            "Tình hình",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 390,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Lý do",
+            "Giảm xuống",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 391,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tình hình",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 392,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 393,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "An toàn",
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 394,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Ảnh hưởng",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 395,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Tăng lên",
+            "Nguy hiểm",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 396,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Nguy hiểm",
+            "Quyết định",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 397,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Lý do",
+            "Ảnh hưởng",
+            "Quyết định",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 398,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Tăng lên",
+            "Mối quan hệ",
+            "Lý do",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 399,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 400,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Quyết định"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "words": [
+        {
+          "id": 401,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 402,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 403,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 404,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tăng lên",
+            "An toàn",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 405,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Lý do",
+            "Nguy hiểm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 406,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 407,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "An toàn",
+            "Tăng lên",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 408,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 409,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "An toàn",
+            "Tình hình",
+            "Nguy hiểm",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 410,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 411,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 412,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 413,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 414,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "An toàn",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 415,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "An toàn",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 416,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "An toàn",
+            "Quyết định",
+            "Kinh nghiệm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 417,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 418,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 419,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tăng lên",
+            "Lý do",
+            "Quyết định",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 420,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tăng lên",
+            "Mối quan hệ",
+            "Tình hình",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 421,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Ảnh hưởng",
+            "Tình hình",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 422,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Ảnh hưởng",
+            "Tăng lên",
+            "Mối quan hệ",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 423,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Mối quan hệ",
+            "Tăng lên",
+            "Lý do",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 424,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Lý do",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 425,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Lý do",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 426,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tình hình",
+            "Mối quan hệ",
+            "Kinh nghiệm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 427,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 428,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 429,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Quyết định",
+            "Lý do",
+            "Nguy hiểm",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 430,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 431,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 432,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Giảm xuống",
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 433,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Lý do",
+            "Quyết định",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 434,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Tăng lên",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 435,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "An toàn",
+            "Tình hình",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 436,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 437,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Mối quan hệ",
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 438,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Kinh nghiệm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 439,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 440,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tăng lên",
+            "Lý do",
+            "Nguy hiểm",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 441,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 442,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Ảnh hưởng",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 443,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Giảm xuống",
+            "Quyết định",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 444,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "An toàn",
+            "Quyết định",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 445,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Lý do",
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 446,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Ảnh hưởng",
+            "An toàn",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 447,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Kinh nghiệm",
+            "Nguy hiểm",
+            "Lý do",
+            "Giảm xuống"
+          ]
+        },
+        {
+          "id": 448,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Nguy hiểm",
+            "Tình hình",
+            "Ảnh hưởng",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 449,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Tình hình",
+            "Kinh nghiệm",
+            "Mối quan hệ",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 450,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "An toàn",
+            "Quyết định"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "words": [
+        {
+          "id": 451,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Tình hình",
+            "Kinh nghiệm",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 452,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Tình hình",
+            "Ảnh hưởng",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 453,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Ảnh hưởng",
+            "An toàn",
+            "Tình hình",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 454,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Mối quan hệ",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 455,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Ảnh hưởng",
+            "Nguy hiểm",
+            "Tăng lên",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 456,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Quyết định",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 457,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Quyết định",
+            "An toàn",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 458,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Mối quan hệ",
+            "Tình hình",
+            "Giảm xuống",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 459,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Ảnh hưởng",
+            "An toàn",
+            "Quyết định",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 460,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Kinh nghiệm",
+            "An toàn",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 461,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Lý do",
+            "Mối quan hệ",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 462,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "Lý do",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 463,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 464,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Tình hình",
+            "Tăng lên",
+            "Quyết định",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 465,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 466,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Mối quan hệ",
+            "Tăng lên",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 467,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 468,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Lý do",
+            "Kinh nghiệm",
+            "Quyết định",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 469,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Giảm xuống",
+            "Nguy hiểm",
+            "Mối quan hệ",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 470,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Tình hình",
+            "Tăng lên",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 471,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "An toàn",
+            "Mối quan hệ",
+            "Tăng lên",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 472,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Tăng lên",
+            "Nguy hiểm",
+            "Lý do",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 473,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Giảm xuống",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 474,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Giảm xuống",
+            "Lý do"
+          ]
+        },
+        {
+          "id": 475,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Tình hình",
+            "Lý do",
+            "Tăng lên",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 476,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Giảm xuống",
+            "An toàn",
+            "Kinh nghiệm",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 477,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Tăng lên",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 478,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "An toàn",
+            "Tình hình",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 479,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "Ảnh hưởng",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 480,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Nguy hiểm",
+            "Lý do",
+            "Tình hình",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 481,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Quyết định",
+            "Tình hình",
+            "Nguy hiểm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 482,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Kinh nghiệm",
+            "An toàn",
+            "Giảm xuống",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 483,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Tăng lên",
+            "Ảnh hưởng",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 484,
+          "jp": "減る",
+          "romaji": "heru",
+          "correct": "Giảm xuống",
+          "options": [
+            "Giảm xuống",
+            "Tình hình",
+            "An toàn",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 485,
+          "jp": "影響",
+          "romaji": "eikyou",
+          "correct": "Ảnh hưởng",
+          "options": [
+            "Nguy hiểm",
+            "Kinh nghiệm",
+            "Ảnh hưởng",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 486,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Ảnh hưởng",
+            "Kinh nghiệm",
+            "Lý do",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 487,
+          "jp": "危険",
+          "romaji": "kiken",
+          "correct": "Nguy hiểm",
+          "options": [
+            "Lý do",
+            "Giảm xuống",
+            "Kinh nghiệm",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 488,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Nguy hiểm",
+            "Quyết định",
+            "Tăng lên",
+            "Kinh nghiệm"
+          ]
+        },
+        {
+          "id": 489,
+          "jp": "決定",
+          "romaji": "kettei",
+          "correct": "Quyết định",
+          "options": [
+            "Nguy hiểm",
+            "Tình hình",
+            "Quyết định",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 490,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Tăng lên",
+            "Tình hình",
+            "Lý do",
+            "Mối quan hệ"
+          ]
+        },
+        {
+          "id": 491,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Tình hình",
+            "Nguy hiểm",
+            "An toàn",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 492,
+          "jp": "経験",
+          "romaji": "keiken",
+          "correct": "Kinh nghiệm",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "Kinh nghiệm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 493,
+          "jp": "関係",
+          "romaji": "kankei",
+          "correct": "Mối quan hệ",
+          "options": [
+            "Mối quan hệ",
+            "Lý do",
+            "An toàn",
+            "Quyết định"
+          ]
+        },
+        {
+          "id": 494,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "Lý do",
+            "Mối quan hệ",
+            "Nguy hiểm",
+            "An toàn"
+          ]
+        },
+        {
+          "id": 495,
+          "jp": "理由",
+          "romaji": "riyuu",
+          "correct": "Lý do",
+          "options": [
+            "An toàn",
+            "Mối quan hệ",
+            "Lý do",
+            "Nguy hiểm"
+          ]
+        },
+        {
+          "id": 496,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "Quyết định",
+            "Tăng lên",
+            "An toàn",
+            "Ảnh hưởng"
+          ]
+        },
+        {
+          "id": 497,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Ảnh hưởng",
+            "Mối quan hệ",
+            "Quyết định",
+            "Tình hình"
+          ]
+        },
+        {
+          "id": 498,
+          "jp": "状況",
+          "romaji": "joukyou",
+          "correct": "Tình hình",
+          "options": [
+            "Kinh nghiệm",
+            "Tình hình",
+            "Nguy hiểm",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 499,
+          "jp": "増える",
+          "romaji": "fueru",
+          "correct": "Tăng lên",
+          "options": [
+            "Mối quan hệ",
+            "An toàn",
+            "Tình hình",
+            "Tăng lên"
+          ]
+        },
+        {
+          "id": 500,
+          "jp": "安全",
+          "romaji": "anzen",
+          "correct": "An toàn",
+          "options": [
+            "An toàn",
+            "Kinh nghiệm",
+            "Tình hình",
+            "Nguy hiểm"
+          ]
+        }
+      ]
+    }
+  ]
+}
