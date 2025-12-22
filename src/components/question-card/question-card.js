@@ -17,7 +17,8 @@ export default function QuestionCard({
 
         // chờ 0.8s cho người chơi thấy màu
         setTimeout(() => {
-            onAnswer(option);
+            const isCorrect = option === word.correct;
+            onAnswer(isCorrect);
             setSelected(null);
             setLocked(false);
         }, 800);
@@ -52,13 +53,13 @@ export default function QuestionCard({
                     {word.romaji}
                 </h2>
             </div>
-            <div className="grid grid-cols-2 text-black gap-3">
+            <div className="grid grid-cols-2 text-black gap-6">
                 {word.options.map((opt) => (
                     <button
                         key={opt}
                         onClick={() => handleClick(opt)}
                         disabled={locked}
-                        className={`p-3 rounded cursor-pointer transition-transform duration-300 hover:scale-105 transition-all ${getOptionClass(opt)}`}
+                        className={`p-5 rounded cursor-pointer transition-transform duration-300 hover:scale-105  ${getOptionClass(opt)}`}
                     >
                         {opt}
                     </button>
