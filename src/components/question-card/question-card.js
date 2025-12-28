@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 export default function QuestionCard({
@@ -15,7 +17,7 @@ export default function QuestionCard({
         setSelected(option);
         setLocked(true);
 
-        // chờ 0.8s cho người chơi thấy màu
+        // ⏱ cho người chơi thấy màu đúng / sai
         setTimeout(() => {
             const isCorrect = option === word.correct;
             onAnswer(isCorrect);
@@ -25,41 +27,47 @@ export default function QuestionCard({
     }
 
     function getOptionClass(option) {
-        if (!locked) return "border";
+        if (!locked) {
+            return "bg-indigo-700 hover:scale-105";
+        }
 
         if (option === word.correct) {
-            return "bg-green-500 text-white";
+            return "bg-green-500 text-white scale-105";
         }
 
         if (option === selected && option !== word.correct) {
             return "bg-red-500 text-white";
         }
 
-        return "border opacity-50";
+        return "bg-white/60 opacity-50";
     }
 
     return (
-        <div className="p-6">
-            {/* 🔢 Câu số */}
-            <p className="text-sm text-black mb-2">
-                Câu {current} / {total}
-            </p>
-            <div className="justify-items-center">
-                <h2 className="text-2xl text-black font-bold mb-4">
+        <div className="h-full bg-[#2b124c] flex flex-col items-center justify-center px-6">
+
+            {/* ================= PROGRESS ================= */}
+            <div className="text-white text-sm mb-4 opacity-80">
+                {current} / {total} từ
+            </div>
+
+            {/* ================= WORD ================= */}
+            <div className="mb-6 text-center">
+                <h2 className="text-4xl font-bold text-white mb-2">
                     {word.jp}
                 </h2>
-
-                <h2 className="text-2xl text-black font-bold mb-4">
+                <p className="text-lg text-white/70">
                     {word.romaji}
-                </h2>
+                </p>
             </div>
-            <div className="grid grid-cols-2 text-black gap-6">
+
+            {/* ================= OPTIONS ================= */}
+            <div className="grid grid-cols-2 gap-5 w-full max-w-md">
                 {word.options.map((opt) => (
                     <button
                         key={opt}
                         onClick={() => handleClick(opt)}
                         disabled={locked}
-                        className={`p-5 rounded cursor-pointer transition-transform duration-300 hover:scale-105  ${getOptionClass(opt)}`}
+                        className={`py-4 px-3 rounded-xl font-semibold  text-lg shadow-md transition-all duration-300 active:scale-95 ${getOptionClass(opt)}`}
                     >
                         {opt}
                     </button>
