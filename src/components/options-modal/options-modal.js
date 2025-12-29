@@ -1,4 +1,5 @@
 "use client";
+import * as STRING from "@/constant/strings";
 
 export default function OptionsModal({ onContinue, onExit }) {
     return (
@@ -13,11 +14,11 @@ export default function OptionsModal({ onContinue, onExit }) {
                 className="bg-white p-6 rounded-xl text-center w-80 animate-scaleIn"
             >
                 <h2 className="text-xl text-gray-900 font-bold mb-4">
-                    ⏸ Tạm dừng
+                    ⏸ {STRING.PAUSE}
                 </h2>
 
                 <p className="mb-6 text-gray-600">
-                    Bạn muốn làm gì tiếp?
+                    {STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                 </p>
 
                 <div className="flex gap-4 justify-center">
@@ -25,14 +26,14 @@ export default function OptionsModal({ onContinue, onExit }) {
                         onClick={onContinue}
                         className="px-4 py-2 bg-green-600 text-white rounded cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg "
                     >
-                        ▶ Tiếp tục
+                        ▶ {STRING.CONTINUE}
                     </button>
 
                     <button
                         onClick={onExit}
                         className="px-4 py-2 bg-red-500 text-white rounded cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg"
                     >
-                        🚪 Thoát
+                        🚪 {STRING.OUT}
                     </button>
                 </div>
             </div>

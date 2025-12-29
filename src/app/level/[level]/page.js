@@ -10,30 +10,36 @@ export default function LevelPage({ params }) {
     const data = getLevelData(level);
     const progress = getProgress();
 
-    const unlockedStage = progress.progress[level]?.unlockedStage || 0;
+    const isUnlocked = progress.unlockedLevels.includes(level);
+
+
+    const unlockedStage = progress.progress[level]?.unlockedStage || 1;
 
     return (
         <div className="p-6 text-black">
-            <h1>{level.toUpperCase()}</h1>
+            <h1 className="text-2xl font-bold mb-4">
+                {level.toUpperCase()}
+            </h1>
 
-            <div className="grid grid-cols-5 text-black gap-2">
-                {data.stages.map(stage => {
-                    const locked = stage.stage > unlockedStage;
+            <div className="grid grid-cols-5 gap-3">
+                {Array.from({ length: data.totalStages }).map((_, i) => {
+                    const stage = i + 1;
+                    const locked = stage > unlockedStage;
 
                     return locked ? (
                         <div
-                            key={stage.stage}
-                            className="border p-2 text-center bg-gray-600 opacity-40"
+                            key={stage}
+                            className="border p-3 text-center bg-gray-600 opacity-40 rounded"
                         >
-                            {stage.stage}
+                            {stage}
                         </div>
                     ) : (
                         <Link
-                            key={stage.stage}
-                            href={`/game/${level}/${stage.stage}`}
+                            key={stage}
+                            href={`/game/${level}/${stage}`}
                         >
-                            <div className="border p-2 text-center cursor-pointer">
-                                {stage.stage}
+                            <div className="border p-3 text-center cursor-pointer hover:bg-indigo-500 hover:text-white rounded transition">
+                                {stage}
                             </div>
                         </Link>
                     );

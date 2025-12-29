@@ -1,0 +1,12 @@
+export const COMPLETE = "Hoàn thành";
+export const QUESTION = "Câu";
+export const POINT = "Điểm";
+export const RETURN = "Trở về";
+export const COMBO = "Combo";
+export const BLOOD = "HP";
+export const INCORRECT_ANSWER = "Trả lời sai!";
+export const WHAT_DO_YOU_WANT_TO_DO_NEXT = "Bạn muốn làm gì tiếp theo?"
+export const START_AGAIN = "Bắt đầu lại";
+export const OUT = "Thoát";
+export const PAUSE = "Tạm dừng";
+export const CONTINUE = "Tiếp tục"

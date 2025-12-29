@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import * as STRING from "@/constant/strings";
 
 export default function QuestionCard({
     word,
@@ -17,7 +18,6 @@ export default function QuestionCard({
         setSelected(option);
         setLocked(true);
 
-        // ⏱ cho người chơi thấy màu đúng / sai
         setTimeout(() => {
             const isCorrect = option === word.correct;
             onAnswer(isCorrect);
@@ -45,12 +45,10 @@ export default function QuestionCard({
     return (
         <div className="h-full bg-[#2b124c] flex flex-col items-center justify-center px-6">
 
-            {/* ================= PROGRESS ================= */}
             <div className="text-white text-sm mb-4 opacity-80">
-                {current} / {total} từ
+                {STRING.QUESTION} {current} / {total}
             </div>
 
-            {/* ================= WORD ================= */}
             <div className="mb-6 text-center">
                 <h2 className="text-4xl font-bold text-white mb-2">
                     {word.jp}
@@ -60,14 +58,13 @@ export default function QuestionCard({
                 </p>
             </div>
 
-            {/* ================= OPTIONS ================= */}
             <div className="grid grid-cols-2 gap-5 w-full max-w-md">
                 {word.options.map((opt) => (
                     <button
                         key={opt}
                         onClick={() => handleClick(opt)}
                         disabled={locked}
-                        className={`py-4 px-3 rounded-xl font-semibold  text-lg shadow-md transition-all duration-300 active:scale-95 ${getOptionClass(opt)}`}
+                        className={`py-4 px-3 rounded-xl font-semibold cursor-pointer text-lg shadow-md transition-all duration-300 active:scale-95 ${getOptionClass(opt)}`}
                     >
                         {opt}
                     </button>
