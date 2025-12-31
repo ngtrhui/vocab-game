@@ -9,6 +9,7 @@ import FailModal from "@/components/fail-modal/fail-modal";
 import OptionsModal from "@/components/options-modal/options-modal";
 import { completeStage } from "@/utils/progress";
 import * as STRING from "@/constant/strings";
+import { getRandomBackground } from "@/utils/getRandomBackground";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
@@ -22,17 +23,23 @@ export default function GamePage({ params }) {
     const [showFail, setShowFail] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
-
+    const [background, setBackground] = useState(null);
     const [answerResult, setAnswerResult] = useState({
         correct: null,
         id: 0,
     });
-
-    // Load 20 từ của stage (giữ cố định)
     useEffect(() => {
-        const words = getStageWords(level); // random 20 từ
-        setRoundWords(words);
+        const bg = getRandomBackground(level);
+        console.log("BG:", bg); // 👈 phải ra đường dẫn
+        setBackground(bg);
+    }, [level, stage]);
 
+
+    useEffect(() => {
+        const words = getStageWords(level);
+        setRoundWords(words);
+        const bg = getRandomBackground(level); // ✅ CHỈ DÒNG NÀY
+        setBackground(bg);
         setIndex(0);
         setScore(0);
         setCombo(0);
@@ -51,12 +58,12 @@ export default function GamePage({ params }) {
 
         if (!isCorrect) {
             setCombo(0);
-            setShowFail(true); // hiện FailModal
+            setShowFail(true);
             return;
         }
 
         if (index + 1 === total) {
-            setHasCompleted(true); // đánh dấu hoàn thành stage
+            setHasCompleted(true);
         }
 
         setCombo((c) => c + 1);
@@ -64,7 +71,6 @@ export default function GamePage({ params }) {
         setIndex((i) => i + 1);
     }
 
-    // Nếu hoàn thành stage
     if (isFinished || hasCompleted) {
         completeStage(level, stage);
 
@@ -74,7 +80,7 @@ export default function GamePage({ params }) {
                 <p className="mb-4">{STRING.POINT}: {score}/{total}</p>
 
                 <button
-                    onClick={() => router.replace(`/level/${level}`)} // replace để back tuần tự
+                    onClick={() => router.replace(`/level/${level}`)}
                     className="px-6 py-3 bg-green-600 text-white rounded"
                 >
                     {STRING.RETURN}
@@ -84,57 +90,71 @@ export default function GamePage({ params }) {
     }
 
     return (
-        <div className="h-screen flex flex-col relative">
-            {/* Nút Pause */}
-            <button
-                onClick={() => setIsPaused(true)}
-                className="absolute top-4 right-4 z-50 bg-white/90 px-4 py-2 rounded-lg font-bold hover:scale-105 transition"
-            >
-                ⏸
-            </button>
+        <div className="relative h-screen overflow-hidden">
+            {/* BACKGROUND CHUNG */}
+            <div
+                className="absolute inset-0 bg-cover bg-center z-0"
+                style={{ backgroundImage: `url(${background})` }}
+            />
 
-            {/* COMBO */}
-            {combo >= 2 && !isPaused && !showFail && (
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 text-2xl font-bold text-orange-400 animate-pulse z-40">
-                    🔥 {STRING.COMBO} x{combo}
+            {/* Overlay cho dễ đọc */}
+            <div className="absolute inset-0 bg-black/40 z-0" />
+
+            {/* CONTENT CHIA 2 NỬA */}
+            <div className="relative z-10 h-full flex flex-col">
+
+                <button
+                    onClick={() => setIsPaused(true)}
+                    className="absolute top-4 right-4 z-50 bg-black px-4 py-2 rounded-lg font-bold hover:scale-105 transition"
+                >
+                    ⏸
+                </button>
+
+                {combo >= 2 && !isPaused && !showFail && (
+                    <div className="absolute top-4 left-1/2 -translate-x-1/2 text-2xl font-bold text-orange-400 animate-pulse z-40">
+                        🔥 {STRING.COMBO} x{combo}
+                    </div>
+                )}
+
+                {/* 🔼 NỬA TRÊN */}
+                <div className="h-1/2 relative">
+                    <BattleScene
+                        answerResult={answerResult}
+                        total={total}
+                    />
                 </div>
-            )}
 
-            {/* BATTLE */}
-            <div className="h-1/2 relative bg-slate-900">
-                <BattleScene answerResult={answerResult} total={total} />
+                {/* 🔽 NỬA DƯỚI */}
+                <div className="h-1/2 relative">
+                    <QuestionCard
+                        word={roundWords[index]}
+                        onAnswer={handleAnswer}
+                        current={index + 1}
+                        total={total}
+                    />
+                </div>
+
+                {isPaused && (
+                    <OptionsModal
+                        onContinue={() => setIsPaused(false)}
+                        onExit={() => router.replace(`/level/${level}`)}
+                    />
+                )}
+
+                {showFail && (
+                    <FailModal
+                        onRestart={() => {
+                            setIndex(0);
+                            setScore(0);
+                            setCombo(0);
+                            setShowFail(false);
+                        }}
+                        onExit={() => router.replace(`/level/${level}`)}
+                    />
+                )}
             </div>
-
-            {/* QUESTION */}
-            <div className="h-1/2">
-                <QuestionCard
-                    word={roundWords[index]}
-                    onAnswer={handleAnswer}
-                    current={index + 1}
-                    total={total}
-                />
-            </div>
-
-            {/* OPTIONS MODAL (Pause) */}
-            {isPaused && (
-                <OptionsModal
-                    onContinue={() => setIsPaused(false)}
-                    onExit={() => router.replace(`/level/${level}`)}
-                />
-            )}
-
-            {/* FAIL MODAL */}
-            {showFail && (
-                <FailModal
-                    onRestart={() => {
-                        setIndex(0);
-                        setScore(0);
-                        setCombo(0);
-                        setShowFail(false);
-                    }}
-                    onExit={() => router.replace(`/level/${level}`)}
-                />
-            )}
         </div>
     );
+
+
 }

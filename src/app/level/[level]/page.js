@@ -4,15 +4,13 @@ import React from "react";
 import Link from "next/link";
 import { getLevelData } from "@/services/vocabularyService";
 import { getProgress } from "@/utils/progress";
+import * as STRING from "@/constant/strings";
 
 export default function LevelPage({ params }) {
     const { level } = React.use(params);
     const data = getLevelData(level);
     const progress = getProgress();
-
     const isUnlocked = progress.unlockedLevels.includes(level);
-
-
     const unlockedStage = progress.progress[level]?.unlockedStage || 1;
 
     return (
@@ -31,7 +29,7 @@ export default function LevelPage({ params }) {
                             key={stage}
                             className="border p-3 text-center bg-gray-600 opacity-40 rounded"
                         >
-                            {stage}
+                            {STRING.SCENE} {stage}
                         </div>
                     ) : (
                         <Link
@@ -39,7 +37,7 @@ export default function LevelPage({ params }) {
                             href={`/game/${level}/${stage}`}
                         >
                             <div className="border p-3 text-center cursor-pointer hover:bg-indigo-500 hover:text-white rounded transition">
-                                {stage}
+                                {STRING.SCENE} {stage}
                             </div>
                         </Link>
                     );

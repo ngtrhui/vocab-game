@@ -8,7 +8,6 @@ export default function OptionsModal({ onContinue, onExit }) {
             onClick={onContinue}
             className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
         >
-            {/* MODAL */}
             <div
                 onClick={(e) => e.stopPropagation()}
                 className="bg-white p-6 rounded-xl text-center w-80 animate-scaleIn"

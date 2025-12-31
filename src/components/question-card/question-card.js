@@ -43,7 +43,7 @@ export default function QuestionCard({
     }
 
     return (
-        <div className="h-full bg-[#2b124c] flex flex-col items-center justify-center px-6">
+        <div className="h-full flex flex-col items-center justify-center px-6">
 
             <div className="text-white text-sm mb-4 opacity-80">
                 {STRING.QUESTION} {current} / {total}

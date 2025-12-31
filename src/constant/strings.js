@@ -9,4 +9,5 @@ export const WHAT_DO_YOU_WANT_TO_DO_NEXT = "Bạn muốn làm gì tiếp theo?"
 export const START_AGAIN = "Bắt đầu lại";
 export const OUT = "Thoát";
 export const PAUSE = "Tạm dừng";
-export const CONTINUE = "Tiếp tục"
+export const CONTINUE = "Tiếp tục";
+export const SCENE = "Màn"
