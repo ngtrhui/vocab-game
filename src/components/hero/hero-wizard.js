@@ -1,27 +1,3 @@
-// const SPRITES = {
-//     idle: {
-//         src: "/assets/characters/hero/wizard/Idle.png",
-//         frames: 6,
-//         fps: 6,
-//     },
-//     idle2: {
-//         src: "/assets/characters/hero/wizard/Idle_2.png",
-//         frames: 6,
-//         fps: 6,
-//     },
-//     attack: [
-//         "/assets/characters/hero/wizard/Attack_1.png",
-//         "/assets/characters/hero/wizard/Attack_2.png",
-//         "/assets/characters/hero/wizard/Attack_3.png",
-//     ],
-//     hurt: [
-//         "/assets/characters/hero/wizard/Hurt.png",
-//     ],
-//     dead: [
-//         "/assets/characters/hero/wizard/Dead.png",
-//     ],
-// };
-
 "use client";
 import { useEffect, useState } from "react";
 
@@ -34,20 +10,49 @@ const SPRITES = {
         src: "/assets/characters/hero/wizard/Idle.png",
         frames: 6,
         fps: 6,
+        loop: true,
+    },
+    attack1: {
+        src: "/assets/characters/hero/wizard/Attack_1.png",
+        frames: 6,
+        fps: 12,
+        loop: false,
+    },
+    attack2: {
+        src: "/assets/characters/hero/wizard/Attack_2.png",
+        frames: 6,
+        fps: 12,
+        loop: false,
+    },
+    attack3: {
+        src: "/assets/characters/hero/wizard/Attack_3.png",
+        frames: 6,
+        fps: 12,
+        loop: false,
     },
 };
 
-export default function HeroWizard({ state = "idle" }) {
-    const sprite = SPRITES[state];
+export default function HeroWizard({ state = "idle", onAnimationEnd }) {
+    const sprite = SPRITES[state] || SPRITES.idle;
     const [frame, setFrame] = useState(0);
 
     useEffect(() => {
+        setFrame(0);
+
         const interval = setInterval(() => {
-            setFrame(f => (f + 1) % sprite.frames);
+            setFrame(f => {
+                // attack → chạy 1 lần rồi dừng
+                if (!sprite.loop && f === sprite.frames - 1) {
+                    clearInterval(interval);
+                    onAnimationEnd?.();
+                    return f;
+                }
+                return (f + 1) % sprite.frames;
+            });
         }, 1000 / sprite.fps);
 
         return () => clearInterval(interval);
-    }, [sprite]);
+    }, [state]);
 
     return (
         <div
@@ -57,7 +62,7 @@ export default function HeroWizard({ state = "idle" }) {
                 overflow: "hidden",
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "flex-end", // 🔥 giữ chân cố định
+                alignItems: "flex-end",
             }}
         >
             <div
@@ -75,6 +80,7 @@ export default function HeroWizard({ state = "idle" }) {
         </div>
     );
 }
+
 
 
 

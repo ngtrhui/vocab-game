@@ -15,36 +15,54 @@ export default function BattleScene({ answerResult, total, background }) {
     const [heroAttack, setHeroAttack] = useState(false);
     const [hitStop, setHitStop] = useState(false);
     const [heroState, setHeroState] = useState("idle");
-
-    // useEffect(() => {
-    //     if (answerResult.id === 0) return;
-
-    //     // ✅ TRẢ LỜI ĐÚNG
-    //     if (answerResult.correct) {
-    //         setHeroState("attack");     // 🧙‍♂️ Wizard tấn công
-    //         setBossHit(true);
-    //         setHitStop(true);
-
-    //         setBossHp(hp => Math.max(0, hp - DAMAGE));
-
-    //         // reset animation
-    //         setTimeout(() => setHeroState("idle"), 300);
-    //         setTimeout(() => setBossHit(false), 300);
-    //         setTimeout(() => setHitStop(false), 100);
-    //     }
-
-    //     // ❌ TRẢ LỜI SAI
-    //     if (answerResult.correct === false) {
-    //         setHeroState("hurt");       // 🧙‍♂️ Wizard bị đánh
-    //         setBossHp(100);
-
-    //         setTimeout(() => {
-    //             setHeroState("idle");
-    //         }, 400);
-    //     }
-    // }, [answerResult.id]);
-
     const [isAttacking, setIsAttacking] = useState(false);
+    const attackList = ["attack1", "attack2", "attack3"];
+
+    const triggerAttack = () => {
+        if (isAttacking) return;
+
+        setIsAttacking(true);
+
+        setTimeout(() => {
+            setIsAttacking(false);
+        }, 300); // thời gian hiệu ứng
+    };
+
+    useEffect(() => {
+        if (answerResult === "correct") {
+            handleHeroAttack();
+        }
+    }, [answerResult]);
+
+
+    const handleHeroAttack = () => {
+        const attack =
+            attackList[Math.floor(Math.random() * attackList.length)];
+
+        setHeroState(attack);
+        setHeroAttack(true);
+        setBossHit(true);
+        setHitStop(true);
+
+        setBossHp(hp => Math.max(0, hp - DAMAGE));
+
+        setTimeout(() => {
+            setHeroAttack(false);
+            setBossHit(false);
+            setHitStop(false);
+        }, 200);
+    };
+    useEffect(() => {
+        if (answerResult?.correct === true) {
+            handleHeroAttack();
+        }
+
+        if (answerResult?.correct === false) {
+            setBossHp(100);
+        }
+    }, [answerResult?.id]);
+
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -54,34 +72,34 @@ export default function BattleScene({ answerResult, total, background }) {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(() => {
-        if (answerResult.id === 0) return;
+    // useEffect(() => {
+    //     if (answerResult.id === 0) return;
 
-        if (answerResult.correct) {
-            setHeroState("attack");
-            setBossHit(true);
-            setHitStop(true);
+    //     if (answerResult.correct) {
+    //         setHeroState("attack");
+    //         setBossHit(true);
+    //         setHitStop(true);
 
-            setBossHp(hp => Math.max(0, hp - DAMAGE));
+    //         setBossHp(hp => Math.max(0, hp - DAMAGE));
 
-            setTimeout(() => {
-                setHeroState("idle");
-                setBossHit(false);
-            }, 350);
+    //         setTimeout(() => {
+    //             setHeroState("idle");
+    //             setBossHit(false);
+    //         }, 350);
 
-            setTimeout(() => setHitStop(false), 120);
-        }
+    //         setTimeout(() => setHitStop(false), 120);
+    //     }
 
-        if (answerResult.correct === false) {
-            setHeroState("hurt");
+    //     if (answerResult.correct === false) {
+    //         setHeroState("hurt");
 
-            setTimeout(() => {
-                setHeroState("idle");
-            }, 400);
+    //         setTimeout(() => {
+    //             setHeroState("idle");
+    //         }, 400);
 
-            setBossHp(100);
-        }
-    }, [answerResult.id]);
+    //         setBossHp(100);
+    //     }
+    // }, [answerResult.id]);
 
 
 
@@ -123,14 +141,23 @@ export default function BattleScene({ answerResult, total, background }) {
 
             <motion.div
                 className="absolute bottom-10 left-20 z-20"
+                animate={heroState !== "idle" ? { x: [0, 40, 0] } : {}}
+                transition={{ duration: 0.25, ease: "easeOut" }}
             >
-                <HeroWizard state="idle" />
+                <HeroWizard
+                    state={heroState}
+                    onAnimationEnd={() => setHeroState("idle")}
+                />
             </motion.div>
 
+
+
             {/* 👹 BOSS */}
-            <div className={`absolute bottom-10 right-20 z-20 ${hitStop ? "scale-105" : ""}`}>
-                <Boss hp={bossHp} hit={bossHit} />
+            <div className="absolute  right-20 z-20">
+                <Boss hit={bossHit} />
             </div>
+
+
         </motion.div>
     );
 }
