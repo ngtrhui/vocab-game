@@ -3,26 +3,94 @@ import { useEffect, useState, useMemo } from "react";
 
 const FRAME_SIZE = 900;
 const SCALE = 0.4;
-const FPS = 8;
-const TOTAL_FRAMES = 18;
 
-export default function Boss({ hit = false }) {
+const SPRITES = {
+    idle: {
+        path: "Idle",
+        frames: 18,
+        fps: 8,
+        loop: true,
+    },
+    hurt: {
+        path: "Hurt",
+        frames: 8,
+        fps: 12,
+        loop: false,
+    },
+    dying: {
+        path: "Dying",
+        frames: 18,
+        fps: 8,
+        loop: false,
+    },
+};
+
+export default function Boss({ hit = false, hp = 100 }) {
+    const [state, setState] = useState("idle");
     const [frame, setFrame] = useState(0);
 
-    // 🔥 preload toàn bộ ảnh
-    const frames = useMemo(() => {
-        return Array.from({ length: TOTAL_FRAMES }, (_, i) =>
-            `/assets/characters/monster/n5/Idle/0_Skeleton_Warrior_Idle_${String(i).padStart(3, "0")}.png`
-        );
-    }, []);
+    const sprite = SPRITES[state];
 
+    /* =========================
+        📦 PRELOAD FRAME THEO STATE
+    ========================== */
+    const frames = useMemo(() => {
+        return Array.from({ length: sprite.frames }, (_, i) =>
+            `/assets/characters/monster/n5/${sprite.path}/0_Skeleton_Warrior_${capitalize(
+                sprite.path
+            )}_${String(i).padStart(3, "0")}.png`
+        );
+    }, [sprite]);
+
+    /* =========================
+        💥 HIT → HURT
+    ========================== */
     useEffect(() => {
+        if (hit && hp > 0 && state !== "hurt") {
+            setState("hurt");
+            setFrame(0);
+        }
+    }, [hit, hp, state]);
+
+    /* =========================
+        💀 HP = 0 → DYING
+    ========================== */
+    useEffect(() => {
+        if (hp <= 0 && state !== "dying") {
+            setState("dying");
+            setFrame(0);
+        }
+    }, [hp, state]);
+
+    /* =========================
+        🎞 ANIMATION ENGINE
+    ========================== */
+    useEffect(() => {
+        if (!sprite) return;
+
         const interval = setInterval(() => {
-            setFrame(f => (f + 1) % TOTAL_FRAMES);
-        }, 1000 / FPS);
+            setFrame((f) => {
+                const next = f + 1;
+
+                if (next >= sprite.frames) {
+                    if (sprite.loop) return 0;
+
+                    // 🔥 DYING: giữ frame cuối
+                    if (state === "dying") {
+                        return sprite.frames - 1;
+                    }
+
+                    // HURT xong → IDLE
+                    setState("idle");
+                    return 0;
+                }
+
+                return next;
+            });
+        }, 1000 / sprite.fps);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [sprite, state]);
 
     return (
         <div
@@ -45,7 +113,7 @@ export default function Boss({ hit = false }) {
                     transform: `scale(${SCALE}) scaleX(-1)`,
                     transformOrigin: "bottom center",
                     imageRendering: "pixelated",
-                    filter: hit ? "brightness(1.4)" : "none",
+                    filter: state === "hurt" ? "brightness(1.4)" : "none",
                     pointerEvents: "none",
                 }}
             />
@@ -53,3 +121,7 @@ export default function Boss({ hit = false }) {
     );
 }
 
+/* =========================
+    🔧 HELPERS
+========================== */
+const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);

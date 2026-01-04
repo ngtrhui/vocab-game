@@ -12,10 +12,10 @@ export default function LevelCard({ level, locked, color }) {
     }
 
     return (
-        <Link href={`/level/${level}`}>
+        <Link href={`/level/${level}`} className="block">
             <div
                 className={`border p-6 text-center rounded-xl cursor-pointer text-white ${color}
-          hover:scale-105 transition`}
+                hover:scale-105 transition`}
             >
                 {level.toUpperCase()}
             </div>

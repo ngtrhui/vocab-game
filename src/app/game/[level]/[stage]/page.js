@@ -5,17 +5,13 @@ import { useState, use, useEffect } from "react";
 import { getStageWords } from "@/services/vocabularyService";
 import QuestionCard from "@/components/question-card/question-card";
 import BattleScene from "@/components/battle/battle-scene";
-import FailModal from "@/components/fail-modal/fail-modal";
 import OptionsModal from "@/components/options-modal/options-modal";
-import { completeStage } from "@/utils/progress";
 import * as STRING from "@/constant/strings";
 import { getRandomBackground } from "@/utils/getRandomBackground";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
     const router = useRouter();
-
-    // Trạng thái game
     const [index, setIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [combo, setCombo] = useState(0);
@@ -24,21 +20,59 @@ export default function GamePage({ params }) {
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
     const [background, setBackground] = useState(null);
+    const [showOptions, setShowOptions] = useState(false);
+
     const [answerResult, setAnswerResult] = useState({
         correct: null,
         id: 0,
     });
+
+    const [modalType, setModalType] = useState(null);
+
+    useEffect(() => {
+        if (score === 20 && modalType === null) {
+            const timer = setTimeout(() => {
+                setModalType("next");
+            }, 20000); // ⏳ 20s
+
+            return () => clearTimeout(timer);
+        }
+    }, [score]);
+
+    const onNextStage = () => {
+        setModalType(null);
+
+        const nextStage = Number(stage) + 1;
+        router.replace(`/game/${level}/${nextStage}`);
+    };
+
     useEffect(() => {
         const bg = getRandomBackground(level);
-        console.log("BG:", bg); // 👈 phải ra đường dẫn
+        console.log("BG:", bg);
         setBackground(bg);
     }, [level, stage]);
 
+    const onRestart = () => {
+        setIndex(0);
+        setScore(0);
+        setCombo(0);
+        setAnswerResult({ correct: null, id: 0 });
+        setModalType(null);
+    };
+
+    const onContinue = () => {
+        setModalType(null);
+    };
+
+    const onExit = () => {
+        setModalType(null);
+        router.replace(`/level/${level}`);
+    };
 
     useEffect(() => {
         const words = getStageWords(level);
         setRoundWords(words);
-        const bg = getRandomBackground(level); // ✅ CHỈ DÒNG NÀY
+        const bg = getRandomBackground(level);
         setBackground(bg);
         setIndex(0);
         setScore(0);
@@ -51,6 +85,7 @@ export default function GamePage({ params }) {
     const isFinished = index >= total;
 
     function handleAnswer(isCorrect) {
+        if (modalType !== null) return;
         setAnswerResult((prev) => ({
             correct: isCorrect,
             id: prev.id + 1,
@@ -58,7 +93,7 @@ export default function GamePage({ params }) {
 
         if (!isCorrect) {
             setCombo(0);
-            setShowFail(true);
+            setModalType("fail");
             return;
         }
 
@@ -71,41 +106,23 @@ export default function GamePage({ params }) {
         setIndex((i) => i + 1);
     }
 
-    if (isFinished || hasCompleted) {
-        completeStage(level, stage);
-
-        return (
-            <div className="p-6 text-center">
-                <h2 className="text-2xl font-bold mb-4">{STRING.COMPLETE}</h2>
-                <p className="mb-4">{STRING.POINT}: {score}/{total}</p>
-
-                <button
-                    onClick={() => router.replace(`/level/${level}`)}
-                    className="px-6 py-3 bg-green-600 text-white rounded"
-                >
-                    {STRING.RETURN}
-                </button>
-            </div>
-        );
-    }
+    const onBackToLevel = () => {
+        setModalType(null);
+        router.replace(`/level/${level}`);
+    };
 
     return (
         <div className="relative h-screen overflow-hidden">
-            {/* BACKGROUND CHUNG */}
             <div
                 className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: `url(${background})` }}
             />
-
-            {/* Overlay cho dễ đọc */}
             <div className="absolute inset-0 bg-black/40 z-0" />
-
-            {/* CONTENT CHIA 2 NỬA */}
             <div className="relative z-10 h-full flex flex-col">
 
                 <button
-                    onClick={() => setIsPaused(true)}
-                    className="absolute top-4 right-4 z-50 bg-black px-4 py-2 rounded-lg font-bold hover:scale-105 transition"
+                    onClick={() => setModalType("pause")}
+                    className="absolute top-4 right-4 z-50 bg-black px-4 py-2 rounded-lg font-bold"
                 >
                     ⏸
                 </button>
@@ -116,40 +133,81 @@ export default function GamePage({ params }) {
                     </div>
                 )}
 
-                {/* 🔼 NỬA TRÊN */}
                 <div className="h-1/2 relative">
                     <BattleScene
                         answerResult={answerResult}
-                        total={total}
+                        maxHits={20}
                     />
                 </div>
 
-                {/* 🔽 NỬA DƯỚI */}
-                <div className="h-1/2 relative">
-                    <QuestionCard
-                        word={roundWords[index]}
-                        onAnswer={handleAnswer}
-                        current={index + 1}
-                        total={total}
-                    />
-                </div>
+                {roundWords[index] && (
+                    <div className="h-1/2 relative">
+                        <QuestionCard
+                            word={roundWords[index]}
+                            onAnswer={handleAnswer}
+                            current={index + 1}
+                            total={total}
+                        />
+                    </div>
+                )}
 
-                {isPaused && (
+                {modalType === "pause" && (
                     <OptionsModal
-                        onContinue={() => setIsPaused(false)}
-                        onExit={() => router.replace(`/level/${level}`)}
+                        title="⏸ Tạm dừng"
+                        description="Bạn muốn làm gì?"
+                        onOverlayClick={onContinue}
+                        options={[
+                            {
+                                label: "Tiếp tục",
+                                className: "bg-green-600",
+                                onClick: onContinue,
+                            },
+                            {
+                                label: "Thoát",
+                                className: "bg-red-500",
+                                onClick: onExit,
+                            },
+                        ]}
                     />
                 )}
 
-                {showFail && (
-                    <FailModal
-                        onRestart={() => {
-                            setIndex(0);
-                            setScore(0);
-                            setCombo(0);
-                            setShowFail(false);
-                        }}
-                        onExit={() => router.replace(`/level/${level}`)}
+                {modalType === "fail" && (
+                    <OptionsModal
+                        title="❌ Sai rồi!"
+                        description="Bạn muốn làm gì tiếp theo?"
+                        onOverlayClick={onRestart}
+                        options={[
+                            {
+                                label: "Chơi lại",
+                                className: "bg-yellow-500",
+                                onClick: onRestart,
+                            },
+                            {
+                                label: "Thoát",
+                                className: "bg-red-500",
+                                onClick: onExit,
+                            },
+                        ]}
+                    />
+                )}
+
+                {modalType === "next" && (
+                    <OptionsModal
+                        title="🎉 Xuất sắc!"
+                        description="Bạn đã trả lời đúng 20 câu 🎯"
+                        onOverlayClick={onBackToLevel}
+                        options={[
+                            {
+                                label: "Màn tiếp theo",
+                                className: "bg-green-600",
+                                onClick: onNextStage,
+                            },
+                            {
+                                label: "Quay về",
+                                className: "bg-gray-500",
+                                onClick: onBackToLevel,
+                            },
+                        ]}
                     />
                 )}
             </div>
