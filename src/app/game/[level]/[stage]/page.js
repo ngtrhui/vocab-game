@@ -20,7 +20,6 @@ export default function GamePage({ params }) {
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
     const [background, setBackground] = useState(null);
-    const [showOptions, setShowOptions] = useState(false);
 
     const [answerResult, setAnswerResult] = useState({
         correct: null,
@@ -28,16 +27,6 @@ export default function GamePage({ params }) {
     });
 
     const [modalType, setModalType] = useState(null);
-
-    useEffect(() => {
-        if (score === 20 && modalType === null) {
-            const timer = setTimeout(() => {
-                setModalType("next");
-            }, 20000); // ⏳ 20s
-
-            return () => clearTimeout(timer);
-        }
-    }, [score]);
 
     const onNextStage = () => {
         setModalType(null);
@@ -86,6 +75,8 @@ export default function GamePage({ params }) {
 
     function handleAnswer(isCorrect) {
         if (modalType !== null) return;
+        if (hasCompleted) return;
+
         setAnswerResult((prev) => ({
             correct: isCorrect,
             id: prev.id + 1,
@@ -105,6 +96,7 @@ export default function GamePage({ params }) {
         setScore((s) => s + 1);
         setIndex((i) => i + 1);
     }
+
 
     const onBackToLevel = () => {
         setModalType(null);
@@ -136,7 +128,10 @@ export default function GamePage({ params }) {
                 <div className="h-1/2 relative">
                     <BattleScene
                         answerResult={answerResult}
-                        maxHits={20}
+                        onBossDead={() => {
+                            console.log("🔥 BOSS DEAD CALLBACK");
+                            setModalType("next");
+                        }}
                     />
                 </div>
 
@@ -213,6 +208,4 @@ export default function GamePage({ params }) {
             </div>
         </div>
     );
-
-
 }

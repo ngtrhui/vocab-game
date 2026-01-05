@@ -36,15 +36,17 @@ export default function HeroWizard({ state = "idle", onAnimationEnd }) {
     const sprite = SPRITES[state] || SPRITES.idle;
     const [frame, setFrame] = useState(0);
 
+    const [finished, setFinished] = useState(false);
+
     useEffect(() => {
         setFrame(0);
+        setFinished(false);
 
         const interval = setInterval(() => {
             setFrame(f => {
-                // attack → chạy 1 lần rồi dừng
                 if (!sprite.loop && f === sprite.frames - 1) {
                     clearInterval(interval);
-                    onAnimationEnd?.();
+                    setFinished(true); // ✅ chỉ set local state
                     return f;
                 }
                 return (f + 1) % sprite.frames;
@@ -53,6 +55,13 @@ export default function HeroWizard({ state = "idle", onAnimationEnd }) {
 
         return () => clearInterval(interval);
     }, [state]);
+    
+    useEffect(() => {
+        if (finished) {
+            onAnimationEnd?.();
+        }
+    }, [finished]);
+
 
     return (
         <div

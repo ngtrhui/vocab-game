@@ -19,7 +19,7 @@ const SPRITES = {
     },
     dying: {
         path: "Dying",
-        frames: 18,
+        frames: 15,
         fps: 8,
         loop: false,
     },
@@ -31,9 +31,6 @@ export default function Boss({ hit = false, hp = 100 }) {
 
     const sprite = SPRITES[state];
 
-    /* =========================
-        📦 PRELOAD FRAME THEO STATE
-    ========================== */
     const frames = useMemo(() => {
         return Array.from({ length: sprite.frames }, (_, i) =>
             `/assets/characters/monster/n5/${sprite.path}/0_Skeleton_Warrior_${capitalize(
@@ -42,9 +39,6 @@ export default function Boss({ hit = false, hp = 100 }) {
         );
     }, [sprite]);
 
-    /* =========================
-        💥 HIT → HURT
-    ========================== */
     useEffect(() => {
         if (hit && hp > 0 && state !== "hurt") {
             setState("hurt");
@@ -52,9 +46,6 @@ export default function Boss({ hit = false, hp = 100 }) {
         }
     }, [hit, hp, state]);
 
-    /* =========================
-        💀 HP = 0 → DYING
-    ========================== */
     useEffect(() => {
         if (hp <= 0 && state !== "dying") {
             setState("dying");
@@ -62,9 +53,6 @@ export default function Boss({ hit = false, hp = 100 }) {
         }
     }, [hp, state]);
 
-    /* =========================
-        🎞 ANIMATION ENGINE
-    ========================== */
     useEffect(() => {
         if (!sprite) return;
 
@@ -75,7 +63,6 @@ export default function Boss({ hit = false, hp = 100 }) {
                 if (next >= sprite.frames) {
                     if (sprite.loop) return 0;
 
-                    // 🔥 DYING: giữ frame cuối
                     if (state === "dying") {
                         return sprite.frames - 1;
                     }
@@ -121,7 +108,4 @@ export default function Boss({ hit = false, hp = 100 }) {
     );
 }
 
-/* =========================
-    🔧 HELPERS
-========================== */
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
