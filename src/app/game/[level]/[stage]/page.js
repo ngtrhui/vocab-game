@@ -88,15 +88,22 @@ export default function GamePage({ params }) {
             return;
         }
 
-        if (index + 1 === total) {
-            setHasCompleted(true);
-        }
+        const nextIndex = index + 1;
 
         setCombo((c) => c + 1);
         setScore((s) => s + 1);
-        setIndex((i) => i + 1);
-    }
+        setIndex(nextIndex);
 
+        // ✅ HOÀN THÀNH 20 CÂU
+        if (nextIndex === total) {
+            setHasCompleted(true);
+
+            // ⏱ đợi animation boss chết rồi mới hiện modal
+            setTimeout(() => {
+                setModalType("next");
+            }, 800); // chỉnh theo animation
+        }
+    }
 
     const onBackToLevel = () => {
         setModalType(null);
@@ -128,11 +135,9 @@ export default function GamePage({ params }) {
                 <div className="h-1/2 relative">
                     <BattleScene
                         answerResult={answerResult}
-                        onBossDead={() => {
-                            console.log("🔥 BOSS DEAD CALLBACK");
-                            setModalType("next");
-                        }}
+                        isCompleted={hasCompleted}
                     />
+
                 </div>
 
                 {roundWords[index] && (
