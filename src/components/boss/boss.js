@@ -1,43 +1,28 @@
 "use client";
 import { useEffect, useState, useMemo } from "react";
+import { BOSS_SPRITES } from "@/configs/bossSprites";
 
-const FRAME_SIZE = 900;
-const SCALE = 0.4;
+const FRAME_WIDTH = 128;
+const FRAME_HEIGHT = 128;
+const SCALE = 3;
 
-const SPRITES = {
-    idle: {
-        path: "Idle",
-        frames: 18,
-        fps: 8,
-        loop: true,
-    },
-    hurt: {
-        path: "Hurt",
-        frames: 8,
-        fps: 12,
-        loop: false,
-    },
-    dying: {
-        path: "Dying",
-        frames: 15,
-        fps: 8,
-        loop: false,
-    },
-};
-
-export default function Boss({ hit = false, hp = 100 }) {
+export default function Boss({
+    level,
+    hit = false,
+    hp = 100,
+    onDyingComplete,
+}) {
     const [state, setState] = useState("idle");
     const [frame, setFrame] = useState(0);
-
-    const sprite = SPRITES[state];
+    const sprite = BOSS_SPRITES[level]?.[state];
 
     const frames = useMemo(() => {
+        if (!sprite) return [];
+
         return Array.from({ length: sprite.frames }, (_, i) =>
-            `/assets/characters/monster/n5/${sprite.path}/0_Skeleton_Warrior_${capitalize(
-                sprite.path
-            )}_${String(i).padStart(3, "0")}.png`
+            `/assets/characters/monster/${level}/${sprite.path}/${sprite.path}_${String(i).padStart(3, "0")}.png`
         );
-    }, [sprite]);
+    }, [sprite, level]);
 
     useEffect(() => {
         if (hit && hp > 0 && state !== "hurt") {
@@ -64,10 +49,10 @@ export default function Boss({ hit = false, hp = 100 }) {
                     if (sprite.loop) return 0;
 
                     if (state === "dying") {
+                        onDyingComplete?.();
                         return sprite.frames - 1;
                     }
 
-                    // HURT xong → IDLE
                     setState("idle");
                     return 0;
                 }
@@ -82,21 +67,22 @@ export default function Boss({ hit = false, hp = 100 }) {
     return (
         <div
             style={{
-                width: FRAME_SIZE * SCALE,
-                height: FRAME_SIZE * SCALE,
+                width: FRAME_WIDTH * SCALE,
+                height: FRAME_HEIGHT * SCALE,
                 overflow: "hidden",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",
             }}
         >
+
             <img
                 src={frames[frame]}
-                alt="boss"
+                alt={`boss-${level}`}
                 draggable={false}
                 style={{
-                    width: FRAME_SIZE,
-                    height: FRAME_SIZE,
+                    width: FRAME_WIDTH,
+                    height: FRAME_HEIGHT,
                     transform: `scale(${SCALE}) scaleX(-1)`,
                     transformOrigin: "bottom center",
                     imageRendering: "pixelated",
@@ -107,5 +93,4 @@ export default function Boss({ hit = false, hp = 100 }) {
         </div>
     );
 }
-
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);

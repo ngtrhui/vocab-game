@@ -46,7 +46,7 @@ export default function HeroWizard({ state = "idle", onAnimationEnd }) {
             setFrame(f => {
                 if (!sprite.loop && f === sprite.frames - 1) {
                     clearInterval(interval);
-                    setFinished(true); // ✅ chỉ set local state
+                    setFinished(true);
                     return f;
                 }
                 return (f + 1) % sprite.frames;

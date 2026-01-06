@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 import Boss from "@/components/boss/boss";
 import HeroWizard from "@/components/hero/hero-wizard";
 
-export default function BattleScene({
-    answerResult,
-    onBossDead,
-}) {
+export default function BattleScene({ answerResult, onBossDead, level, }) {
     const maxHits = 20;
     const DAMAGE = 1;
     const [bossHp, setBossHp] = useState(100);
@@ -36,6 +33,12 @@ export default function BattleScene({
 
         setTimeout(() => setBossHit(false), 200);
     };
+
+    useEffect(() => {
+        setBossHp(100);
+        setBossHit(false);
+        hasNotifiedDead.current = false;
+    }, [level]);
 
     useEffect(() => {
         if (correctCount === maxHits && bossHp > 0) {
@@ -74,8 +77,9 @@ export default function BattleScene({
                 />
             </motion.div>
 
-            <div className="absolute right-20 z-20">
+            <div className="absolute bottom: 0.25rem right-20 z-20">
                 <Boss
+                    level={level}
                     hp={bossHp}
                     hit={bossHit}
                     onDyingComplete={() => {

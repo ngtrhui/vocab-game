@@ -7,11 +7,12 @@ import QuestionCard from "@/components/question-card/question-card";
 import BattleScene from "@/components/battle/battle-scene";
 import OptionsModal from "@/components/options-modal/options-modal";
 import * as STRING from "@/constant/strings";
-import { getRandomBackground } from "@/utils/getRandomBackground";
+import { BACKGROUNDS } from "@/constant/backgrounds";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
     const router = useRouter();
+
     const [index, setIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [combo, setCombo] = useState(0);
@@ -19,14 +20,16 @@ export default function GamePage({ params }) {
     const [showFail, setShowFail] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
-    const [background, setBackground] = useState(null);
+    const [modalType, setModalType] = useState(null);
 
     const [answerResult, setAnswerResult] = useState({
         correct: null,
         id: 0,
     });
 
-    const [modalType, setModalType] = useState(null);
+    const backgrounds = BACKGROUNDS[level] ?? [];
+    const bgIndex = (Number(stage) - 1) % backgrounds.length;
+    const background = backgrounds[bgIndex];
 
     const onNextStage = () => {
         setModalType(null);
@@ -35,11 +38,6 @@ export default function GamePage({ params }) {
         router.replace(`/game/${level}/${nextStage}`);
     };
 
-    useEffect(() => {
-        const bg = getRandomBackground(level);
-        console.log("BG:", bg);
-        setBackground(bg);
-    }, [level, stage]);
 
     const onRestart = () => {
         setIndex(0);
@@ -57,25 +55,23 @@ export default function GamePage({ params }) {
         setModalType(null);
         router.replace(`/level/${level}`);
     };
-
     useEffect(() => {
         const words = getStageWords(level);
         setRoundWords(words);
-        const bg = getRandomBackground(level);
-        setBackground(bg);
         setIndex(0);
         setScore(0);
         setCombo(0);
         setShowFail(false);
         setHasCompleted(false);
+        setModalType(null);
+        setAnswerResult({ correct: null, id: 0 });
     }, [level, stage]);
 
     const total = roundWords.length;
     const isFinished = index >= total;
 
     function handleAnswer(isCorrect) {
-        if (modalType !== null) return;
-        if (hasCompleted) return;
+        if (modalType !== null || hasCompleted) return;
 
         setAnswerResult((prev) => ({
             correct: isCorrect,
@@ -94,17 +90,13 @@ export default function GamePage({ params }) {
         setScore((s) => s + 1);
         setIndex(nextIndex);
 
-        // ✅ HOÀN THÀNH 20 CÂU
         if (nextIndex === total) {
             setHasCompleted(true);
-
-            // ⏱ đợi animation boss chết rồi mới hiện modal
             setTimeout(() => {
                 setModalType("next");
-            }, 800); // chỉnh theo animation
+            }, 800);
         }
     }
-
     const onBackToLevel = () => {
         setModalType(null);
         router.replace(`/level/${level}`);
@@ -118,7 +110,6 @@ export default function GamePage({ params }) {
             />
             <div className="absolute inset-0 bg-black/40 z-0" />
             <div className="relative z-10 h-full flex flex-col">
-
                 <button
                     onClick={() => setModalType("pause")}
                     className="absolute top-4 right-4 z-50 bg-black px-4 py-2 rounded-lg font-bold"
@@ -133,11 +124,11 @@ export default function GamePage({ params }) {
                 )}
 
                 <div className="h-1/2 relative">
-                    <BattleScene
-                        answerResult={answerResult}
-                        isCompleted={hasCompleted}
-                    />
-
+                        <BattleScene
+                            level={level}
+                            answerResult={answerResult}
+                            isCompleted={hasCompleted}
+                        />
                 </div>
 
                 {roundWords[index] && (

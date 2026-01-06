@@ -1,11 +1,6 @@
 "use client";
 
-export default function OptionsModal({
-    title,
-    description,
-    options = [],
-    onOverlayClick,
-}) {
+export default function OptionsModal({title, description, options = [], onOverlayClick,}) {
     return (
         <div
             onClick={onOverlayClick}
