@@ -10,7 +10,7 @@ function shuffle(array) {
  * @param {number} stage
  */
 export function getStageWords(level) {
-    const data = n5; // demo
+    const data = n5;
     return shuffle(data.words).slice(0, 20);
 }
 

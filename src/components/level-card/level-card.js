@@ -1,23 +1,18 @@
 import Link from "next/link";
 
 export default function LevelCard({ level, locked, color }) {
-    if (locked) {
-        return (
-            <div
-                className={`border p-6 text-center rounded-xl ${color} opacity-40`}
-            >
-                {level.toUpperCase()} 🔒
-            </div>
-        );
-    }
-
     return (
-        <Link href={`/level/${level}`} className="block">
+        <Link
+            href={locked ? "#" : `/level/${level}`}
+            className={`block ${locked ? "pointer-events-none" : ""}`}
+            aria-disabled={locked}
+        >
             <div
-                className={`border p-6 text-center rounded-xl cursor-pointer text-white ${color}
-                hover:scale-105 transition`}
+                className={`border p-6 text-center rounded-xl text-white transition
+                ${color}
+                ${locked ? "opacity-40 cursor-not-allowed" : "hover:scale-105"}`}
             >
-                {level.toUpperCase()}
+                {level.toUpperCase()} {locked && "🔒"}
             </div>
         </Link>
     );

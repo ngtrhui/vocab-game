@@ -25,9 +25,7 @@ export default function OptionsModal({title, description, options = [], onOverla
                         <button
                             key={index}
                             onClick={opt.onClick}
-                            className={`
-                                px-4 py-2 rounded text-white cursor-pointer
-                                transition-all duration-200 hover:scale-105 hover:shadow-lg
+                            className={`px-4 py-2 rounded text-white cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg
                                 ${opt.className}
                             `}
                         >

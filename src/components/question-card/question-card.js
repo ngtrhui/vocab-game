@@ -3,12 +3,7 @@
 import { useState } from "react";
 import * as STRING from "@/constant/strings";
 
-export default function QuestionCard({
-    word,
-    onAnswer,
-    current,
-    total,
-}) {
+export default function QuestionCard({word, onAnswer, current, total,}) {
     const [selected, setSelected] = useState(null);
     const [locked, setLocked] = useState(false);
 

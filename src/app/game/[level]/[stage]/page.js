@@ -55,6 +55,8 @@ export default function GamePage({ params }) {
         setModalType(null);
         router.replace(`/level/${level}`);
     };
+
+
     useEffect(() => {
         const words = getStageWords(level);
         setRoundWords(words);
@@ -124,11 +126,11 @@ export default function GamePage({ params }) {
                 )}
 
                 <div className="h-1/2 relative">
-                        <BattleScene
-                            level={level}
-                            answerResult={answerResult}
-                            isCompleted={hasCompleted}
-                        />
+                    <BattleScene
+                        level={level}
+                        answerResult={answerResult}
+                        isCompleted={hasCompleted}
+                    />
                 </div>
 
                 {roundWords[index] && (
@@ -144,17 +146,17 @@ export default function GamePage({ params }) {
 
                 {modalType === "pause" && (
                     <OptionsModal
-                        title="⏸ Tạm dừng"
-                        description="Bạn muốn làm gì?"
+                        title={`⏸ ${STRING.PAUSE}`}
+                        description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                         onOverlayClick={onContinue}
                         options={[
                             {
-                                label: "Tiếp tục",
+                                label: STRING.CONTINUE,
                                 className: "bg-green-600",
                                 onClick: onContinue,
                             },
                             {
-                                label: "Thoát",
+                                label: STRING.OUT,
                                 className: "bg-red-500",
                                 onClick: onExit,
                             },
@@ -164,17 +166,17 @@ export default function GamePage({ params }) {
 
                 {modalType === "fail" && (
                     <OptionsModal
-                        title="❌ Sai rồi!"
-                        description="Bạn muốn làm gì tiếp theo?"
+                        title={`${STRING.INCORRECT_ANSWER}`}
+                        description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                         onOverlayClick={onRestart}
                         options={[
                             {
-                                label: "Chơi lại",
+                                label: STRING.START_AGAIN,
                                 className: "bg-yellow-500",
                                 onClick: onRestart,
                             },
                             {
-                                label: "Thoát",
+                                label: STRING.OUT,
                                 className: "bg-red-500",
                                 onClick: onExit,
                             },
@@ -184,17 +186,17 @@ export default function GamePage({ params }) {
 
                 {modalType === "next" && (
                     <OptionsModal
-                        title="🎉 Xuất sắc!"
-                        description="Bạn đã trả lời đúng 20 câu 🎯"
+                        title={`${STRING.COMPLETE}`}
+                        description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                         onOverlayClick={onBackToLevel}
                         options={[
                             {
-                                label: "Màn tiếp theo",
+                                label: "STRING.CONTINUE",
                                 className: "bg-green-600",
                                 onClick: onNextStage,
                             },
                             {
-                                label: "Quay về",
+                                label: "STRING.OUT",
                                 className: "bg-gray-500",
                                 onClick: onBackToLevel,
                             },

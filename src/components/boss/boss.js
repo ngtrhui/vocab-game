@@ -18,7 +18,6 @@ export default function Boss({
 
     const frames = useMemo(() => {
         if (!sprite) return [];
-
         return Array.from({ length: sprite.frames }, (_, i) =>
             `/assets/characters/monster/${level}/${sprite.path}/${sprite.path}_${String(i).padStart(3, "0")}.png`
         );
@@ -93,4 +92,3 @@ export default function Boss({
         </div>
     );
 }
-const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);

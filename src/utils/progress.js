@@ -57,5 +57,3 @@ export function completeStage(level, stage) {
     }
     saveProgress(data);
 }
-
-

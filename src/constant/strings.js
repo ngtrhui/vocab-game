@@ -10,4 +10,4 @@ export const START_AGAIN = "Bắt đầu lại";
 export const OUT = "Thoát";
 export const PAUSE = "Tạm dừng";
 export const CONTINUE = "Tiếp tục";
-export const SCENE = "Màn"
+export const SCENE = "Màn";
