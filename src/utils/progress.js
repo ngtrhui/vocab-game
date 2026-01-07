@@ -26,7 +26,6 @@ export function saveProgress(data) {
 
 export function completeStage(level, stage) {
     const data = getProgress();
-
     const stageNum = Number(stage);
     const totalStages = 100;
 
@@ -36,7 +35,7 @@ export function completeStage(level, stage) {
         levelData.completedStages.push(stageNum);
     }
 
-    if (stageNum >= levelData.unlockedStage) {
+    if (stageNum + 1 > levelData.unlockedStage) {
         levelData.unlockedStage = stageNum + 1;
     }
 

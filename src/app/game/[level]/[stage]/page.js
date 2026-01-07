@@ -8,6 +8,7 @@ import BattleScene from "@/components/battle/battle-scene";
 import OptionsModal from "@/components/options-modal/options-modal";
 import * as STRING from "@/constant/strings";
 import { BACKGROUNDS } from "@/constant/backgrounds";
+import { completeStage, getProgress } from "@/utils/progress";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
@@ -21,24 +22,47 @@ export default function GamePage({ params }) {
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
     const [modalType, setModalType] = useState(null);
-
+    const MAX_STAGE_PER_LEVEL = 100;
+    const LEVEL_ORDER = ["n5", "n4", "n3", "n2", "n1"];
+    const total = roundWords.length;
+    const isFinished = index >= total;
+    const currentIndex = LEVEL_ORDER.indexOf(level);
     const [answerResult, setAnswerResult] = useState({
         correct: null,
         id: 0,
     });
 
-    const backgrounds = BACKGROUNDS[level] ?? [];
-    const bgIndex = (Number(stage) - 1) % backgrounds.length;
+    const backgrounds = BACKGROUNDS[level] || BACKGROUNDS["n5"] || [];
+    const bgIndex = backgrounds.length
+        ? (Number(stage) - 1) % backgrounds.length
+        : 0;
+
     const background = backgrounds[bgIndex];
 
     const onNextStage = () => {
         setModalType(null);
 
-        const nextStage = Number(stage) + 1;
-        router.replace(`/game/${level}/${nextStage}`);
+        const currentStage = Number(stage);
+
+        if (currentStage < MAX_STAGE_PER_LEVEL) {
+            router.replace(`/game/${level}/${currentStage + 1}`);
+            return;
+        }
+
+        if (currentIndex !== -1 && currentIndex < LEVEL_ORDER.length - 1) {
+            const nextLevel = LEVEL_ORDER[currentIndex + 1];
+            router.replace(`/game/${nextLevel}/1`);
+            return;
+        }
+
+        router.replace(`/level`);
     };
 
-
+    const onExit = () => {
+        setModalType(null);
+        router.replace(`/level/${level}`);
+    };
+    
     const onRestart = () => {
         setIndex(0);
         setScore(0);
@@ -51,25 +75,30 @@ export default function GamePage({ params }) {
         setModalType(null);
     };
 
-    const onExit = () => {
+    const onBackToLevel = () => {
         setModalType(null);
-        router.back();
+        router.replace(`/level/${level}`);
     };
-    
+
     useEffect(() => {
-        const words = getStageWords(level);
+        const stageNum = Number(stage);
+
+        if (stageNum < 1 || stageNum > MAX_STAGE_PER_LEVEL) {
+            router.replace(`/game/${level}/1`);
+            return;
+        }
+
+        const words = getStageWords(level, stageNum);
         setRoundWords(words);
+
         setIndex(0);
         setScore(0);
         setCombo(0);
-        setShowFail(false);
         setHasCompleted(false);
         setModalType(null);
         setAnswerResult({ correct: null, id: 0 });
     }, [level, stage]);
 
-    const total = roundWords.length;
-    const isFinished = index >= total;
 
     function handleAnswer(isCorrect) {
         if (modalType !== null || hasCompleted) return;
@@ -93,15 +122,12 @@ export default function GamePage({ params }) {
 
         if (nextIndex === total) {
             setHasCompleted(true);
+            completeStage(level, stage);
             setTimeout(() => {
                 setModalType("next");
             }, 800);
         }
     }
-    const onBackToLevel = () => {
-        setModalType(null);
-        router.replace(`/level/${level}`);
-    };
 
     return (
         <div className="relative h-screen overflow-hidden">
@@ -190,12 +216,12 @@ export default function GamePage({ params }) {
                         onOverlayClick={onBackToLevel}
                         options={[
                             {
-                                label: "STRING.CONTINUE",
+                                label: STRING.CONTINUE,
                                 className: "bg-green-600",
                                 onClick: onNextStage,
                             },
                             {
-                                label: "STRING.OUT",
+                                label: STRING.OUT,
                                 className: "bg-gray-500",
                                 onClick: onExit,
                             },
