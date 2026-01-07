@@ -53,10 +53,9 @@ export default function GamePage({ params }) {
 
     const onExit = () => {
         setModalType(null);
-        router.replace(`/level/${level}`);
+        router.back();
     };
-
-
+    
     useEffect(() => {
         const words = getStageWords(level);
         setRoundWords(words);
@@ -198,7 +197,7 @@ export default function GamePage({ params }) {
                             {
                                 label: "STRING.OUT",
                                 className: "bg-gray-500",
-                                onClick: onBackToLevel,
+                                onClick: onExit,
                             },
                         ]}
                     />
