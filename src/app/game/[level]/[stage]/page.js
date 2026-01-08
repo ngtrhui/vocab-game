@@ -27,6 +27,11 @@ export default function GamePage({ params }) {
     const total = roundWords.length;
     const isFinished = index >= total;
     const currentIndex = LEVEL_ORDER.indexOf(level);
+    const TIME_LIMIT = 10; // giây
+    const ATTACK_TIME = 10;
+    const [timeLeft, setTimeLeft] = useState(TIME_LIMIT);
+    const [bossPhase, setBossPhase] = useState("idle");
+
     const [answerResult, setAnswerResult] = useState({
         correct: null,
         id: 0,
@@ -62,7 +67,7 @@ export default function GamePage({ params }) {
         setModalType(null);
         router.replace(`/level/${level}`);
     };
-    
+
     const onRestart = () => {
         setIndex(0);
         setScore(0);
@@ -79,6 +84,10 @@ export default function GamePage({ params }) {
         setModalType(null);
         router.replace(`/level/${level}`);
     };
+
+    useEffect(() => {
+        setTimeLeft(TIME_LIMIT);
+    }, [index]);
 
     useEffect(() => {
         const stageNum = Number(stage);
@@ -99,10 +108,38 @@ export default function GamePage({ params }) {
         setAnswerResult({ correct: null, id: 0 });
     }, [level, stage]);
 
+    useEffect(() => {
+        setTimeLeft(ATTACK_TIME);
+        setBossPhase("idle");
+    }, [index]);
+
+    useEffect(() => {
+        if (modalType !== null || hasCompleted) return;
+
+        if (timeLeft <= 0) {
+            setBossPhase("attacking");
+            handleAnswer(false); // ⛔ timeout = sai
+            return;
+        }
+
+        setBossPhase("approaching");
+
+        const timer = setTimeout(() => {
+            setTimeLeft((t) => t - 1);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, [timeLeft, modalType, hasCompleted]);
 
     function handleAnswer(isCorrect) {
         if (modalType !== null || hasCompleted) return;
+        if (isCorrect) {
+            setBossPhase("retreating");
+        } else {
+            setBossPhase("attacking");
+        }
 
+        setTimeLeft(TIME_LIMIT);
         setAnswerResult((prev) => ({
             correct: isCorrect,
             id: prev.id + 1,
@@ -149,12 +186,21 @@ export default function GamePage({ params }) {
                         🔥 {STRING.COMBO} x{combo}
                     </div>
                 )}
+                <div
+                    className={`absolute top-4 left-4 z-50 px-4 py-2 rounded-xl font-bold
+    ${timeLeft <= 2 ? "bg-red-600 animate-pulse" : "bg-black/70"}
+  `}
+                >
+                    ⏱ {timeLeft}s
+                </div>
+
 
                 <div className="h-1/2 relative">
                     <BattleScene
                         level={level}
                         answerResult={answerResult}
                         isCompleted={hasCompleted}
+                        bossPhase={bossPhase}
                     />
                 </div>
 

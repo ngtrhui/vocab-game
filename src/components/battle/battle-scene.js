@@ -5,9 +5,15 @@ import { motion } from "framer-motion";
 import Boss from "@/components/boss/boss";
 import HeroWizard from "@/components/hero/hero-wizard";
 
-export default function BattleScene({ answerResult, onBossDead, level, }) {
+export default function BattleScene({ answerResult, onBossDead, level, bossPhase, }) {
     const maxHits = 20;
     const DAMAGE = 1;
+    const START_X = 0;
+    const ATTACK_X = -180;
+
+    const [bossX, setBossX] = useState(START_X);
+    const [bossState, setBossState] = useState("idle");
+
     const [bossHp, setBossHp] = useState(100);
     const [bossHit, setBossHit] = useState(false);
     const [heroState, setHeroState] = useState("idle");
@@ -33,6 +39,27 @@ export default function BattleScene({ answerResult, onBossDead, level, }) {
 
         setTimeout(() => setBossHit(false), 200);
     };
+
+    useEffect(() => {
+        switch (bossPhase) {
+            case "approaching":
+                setBossX(ATTACK_X);
+                setBossState("walking");
+                break;
+
+            case "retreating":
+                setBossX(START_X);
+                setBossState("walking");
+                break;
+
+            case "attacking":
+                setBossState("attack");
+                break;
+
+            default:
+                setBossState("idle");
+        }
+    }, [bossPhase]);
 
     useEffect(() => {
         setBossHp(100);
@@ -77,11 +104,15 @@ export default function BattleScene({ answerResult, onBossDead, level, }) {
                 />
             </motion.div>
 
-            <div className="absolute bottom: 0.25rem right-20 z-20">
+            <motion.div className="absolute bottom: 0.25rem right-20 z-20"
+                animate={{ x: bossX }}
+                transition={{ duration: 1.2, ease: "easeInOut" }}
+            >
                 <Boss
                     level={level}
                     hp={bossHp}
                     hit={bossHit}
+                    state={bossState}
                     onDyingComplete={() => {
                         if (
                             !hasNotifiedDead.current &&
@@ -92,7 +123,7 @@ export default function BattleScene({ answerResult, onBossDead, level, }) {
                         }
                     }}
                 />
-            </div>
+            </motion.div>
         </div>
     );
 }

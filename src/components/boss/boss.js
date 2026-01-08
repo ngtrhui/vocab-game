@@ -10,6 +10,7 @@ export default function Boss({
     level,
     hit = false,
     hp = 100,
+    state: externalState,
     onDyingComplete,
 }) {
     const [state, setState] = useState("idle");
@@ -29,6 +30,12 @@ export default function Boss({
             setFrame(0);
         }
     }, [hit, hp, state]);
+
+    useEffect(() => {
+        if (!externalState) return;
+        setState(externalState);
+        setFrame(0);
+    }, [externalState]);
 
     useEffect(() => {
         if (hp <= 0 && state !== "dying") {
