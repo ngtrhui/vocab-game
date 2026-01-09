@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 import Boss from "@/components/boss/boss";
 import HeroWizard from "@/components/hero/hero-wizard";
 
-export default function BattleScene({ answerResult, onBossDead, level, bossPhase, timeLeft, attackTime, }) {
+export default function BattleScene({ answerResult, onBossDead, level, bossPhase, timeLeft, attackTime, onBossAttackComplete }) {
     const maxHits = 20;
     const DAMAGE = 1;
     const START_X = 0;
     const MOVE_DISTANCE = 750; // 👈 chỉnh khoảng cách tại đây
     const ATTACK_X = START_X - MOVE_DISTANCE;
-
+    const [canShowOptions, setCanShowOptions] = useState(false);
 
     const [bossX, setBossX] = useState(START_X);
     const [bossState, setBossState] = useState("idle");
@@ -52,6 +52,12 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
         setBossX(nextX);
         setBossState("walking");
     }, [timeLeft, bossPhase, attackTime]);
+
+    useEffect(() => {
+        if (bossPhase === "attacking") {
+            setCanShowOptions(false); // reset
+        }
+    }, [bossPhase]);
 
     useEffect(() => {
         if (bossPhase === "idle") {
@@ -134,6 +140,9 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
                     hp={bossHp}
                     hit={bossHit}
                     state={bossState}
+                    onAttackComplete={() => {
+                        onBossAttackComplete?.(); 
+                    }}
                     onDyingComplete={() => {
                         if (
                             !hasNotifiedDead.current &&

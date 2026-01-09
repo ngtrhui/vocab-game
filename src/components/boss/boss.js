@@ -55,6 +55,13 @@ export default function Boss({
                 if (next >= sprite.frames) {
                     if (sprite.loop) return 0;
 
+                    // ✅ attack xong
+                    if (state === "attack") {
+                        onAttackComplete?.();
+                        setState("idle");
+                        return 0;
+                    }
+
                     if (state === "dying") {
                         onDyingComplete?.();
                         return sprite.frames - 1;

@@ -13,6 +13,7 @@ import { completeStage, getProgress } from "@/utils/progress";
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
     const router = useRouter();
+    const [waitingBossAttack, setWaitingBossAttack] = useState(false);
 
     const [index, setIndex] = useState(0);
     const [score, setScore] = useState(0);
@@ -43,6 +44,11 @@ export default function GamePage({ params }) {
         : 0;
 
     const background = backgrounds[bgIndex];
+
+    const handleFail = () => {
+        setWaitingBossAttack(true);   // ⏳ chờ boss đánh
+        setBossPhase("attacking");
+    };
 
     const onNextStage = () => {
         setModalType(null);
@@ -113,12 +119,17 @@ export default function GamePage({ params }) {
         setBossPhase("idle");
     }, [index]);
 
+    const triggerFail = () => {
+        setWaitingBossAttack(true);
+        setBossPhase("attacking");
+    };
+
     useEffect(() => {
         if (modalType !== null || hasCompleted) return;
 
         if (timeLeft <= 0) {
             setBossPhase("attacking");
-            handleAnswer(false); // ⛔ timeout = sai
+            triggerFail();
             return;
         }
 
@@ -133,13 +144,7 @@ export default function GamePage({ params }) {
 
     function handleAnswer(isCorrect) {
         if (modalType !== null || hasCompleted) return;
-        if (isCorrect) {
-            setBossPhase("retreating");
-        } else {
-            setBossPhase("attacking");
-        }
 
-        setTimeLeft(TIME_LIMIT);
         setAnswerResult((prev) => ({
             correct: isCorrect,
             id: prev.id + 1,
@@ -147,12 +152,13 @@ export default function GamePage({ params }) {
 
         if (!isCorrect) {
             setCombo(0);
-            setModalType("fail");
+            triggerFail(); // 👈 CHỈ KÍCH HOẠT ATTACK
             return;
         }
 
-        const nextIndex = index + 1;
+        setBossPhase("retreating");
 
+        const nextIndex = index + 1;
         setCombo((c) => c + 1);
         setScore((s) => s + 1);
         setIndex(nextIndex);
@@ -165,6 +171,7 @@ export default function GamePage({ params }) {
             }, 800);
         }
     }
+
 
     return (
         <div className="relative h-screen overflow-hidden">
@@ -203,6 +210,12 @@ export default function GamePage({ params }) {
                         bossPhase={bossPhase}
                         timeLeft={timeLeft}
                         attackTime={ATTACK_TIME}
+                        onBossAttackComplete={() => {
+                            if (waitingBossAttack) {
+                                setModalType("fail");   // ✅ DUY NHẤT 1 CHỖ
+                                setWaitingBossAttack(false);
+                            }
+                        }}
                     />
                 </div>
 
@@ -239,7 +252,7 @@ export default function GamePage({ params }) {
 
                 {modalType === "fail" && (
                     <OptionsModal
-                        title={`${STRING.INCORRECT_ANSWER}`}
+                        title={STRING.INCORRECT_ANSWER}
                         description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                         onOverlayClick={onRestart}
                         options={[
@@ -256,6 +269,7 @@ export default function GamePage({ params }) {
                         ]}
                     />
                 )}
+
 
                 {modalType === "next" && (
                     <OptionsModal
