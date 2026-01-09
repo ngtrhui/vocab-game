@@ -127,11 +127,6 @@ export default function GamePage({ params }) {
         setWaitingBossAttack(false);
     }, [level, stage]);
 
-    // useEffect(() => {
-    //     setTimeLeft(ATTACK_TIME);
-    //     setBossPhase("idle");
-    // }, [index]);
-
     const triggerFail = () => {
         setWaitingBossAttack(true);
         setBossPhase("attacking");
@@ -140,7 +135,6 @@ export default function GamePage({ params }) {
     };
     
     useEffect(() => {
-        // mỗi câu hỏi mới → boss đi lại
         setBossPhase("approaching");
         setIsPaused(false);
     }, [index]);
@@ -232,7 +226,7 @@ export default function GamePage({ params }) {
                         bossPhase={bossPhase}
                         timeLeft={timeLeft}
                         attackTime={ATTACK_TIME}
-                        onBossAttackComplete={() => {
+                        onHeroDyingComplete={() => {
                             if (waitingBossAttack) {
                                 setModalType("fail");
                                 setWaitingBossAttack(false);

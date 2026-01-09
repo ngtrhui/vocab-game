@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Boss from "@/components/boss/boss";
 import HeroWizard from "@/components/hero/hero-wizard";
 
-export default function BattleScene({ answerResult, onBossDead, level, bossPhase, timeLeft, attackTime, onBossAttackComplete }) {
+export default function BattleScene({ answerResult, onBossDead, level, bossPhase, timeLeft, attackTime, onBossAttackComplete, onHeroDyingComplete, }) {
     const maxHits = 20;
     const DAMAGE = 1;
     const START_X = 0;
@@ -47,7 +47,7 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
     useEffect(() => {
         if (bossPhase !== "approaching") return;
 
-        const progress = 1 - timeLeft / attackTime; // 0 → 1
+        const progress = 1 - timeLeft / attackTime;
         const nextX = START_X + (ATTACK_X - START_X) * progress;
 
         setBossX(nextX);
@@ -56,7 +56,7 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
 
     useEffect(() => {
         if (bossPhase === "attacking") {
-            setCanShowOptions(false); // reset
+            setCanShowOptions(false);
         }
     }, [bossPhase]);
 
@@ -73,7 +73,7 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
 
     useEffect(() => {
         if (bossPhase === "idle") {
-            setShouldAnimate(false);   // ❗ không animate
+            setShouldAnimate(false);
             setBossX(START_X);
             setBossState("idle");
             return;
@@ -135,10 +135,19 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
                 <HeroWizard
                     state={heroState}
                     onAnimationEnd={() => {
-                        if (
-                            heroState === "hurt" ||
-                            heroState.startsWith("attack")
-                        ) {
+                        if (heroState === "hurt") {
+                            if (heroHp <= 0) {
+                                setHeroState("dying");
+                            } else {
+                                setHeroState("idle");
+                            }
+                        }
+
+                        if (heroState === "dying") {
+                            onHeroDyingComplete?.();
+                        }
+
+                        if (heroState.startsWith("attack")) {
                             setHeroState("idle");
                         }
                     }}
@@ -160,20 +169,14 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
                     hit={bossHit}
                     state={bossState}
                     onAttackComplete={() => {
+                        if (heroState === "dying") return;
                         setHeroHp((hp) => {
                             const nextHp = hp - 1;
-
-                            if (nextHp <= 0) {
-                                setHeroState("dying");
-                                return 0;
-                            }
-
                             setHeroState("hurt");
-                            return nextHp;
+                            return Math.max(0, nextHp);
                         });
-
-                        onBossAttackComplete?.();
                     }}
+
                     onDyingComplete={() => {
                         if (
                             !hasNotifiedDead.current &&
