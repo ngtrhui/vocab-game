@@ -28,7 +28,7 @@ export default function GamePage({ params }) {
     const total = roundWords.length;
     const isFinished = index >= total;
     const currentIndex = LEVEL_ORDER.indexOf(level);
-    const TIME_LIMIT = 10; // giây
+    const TIME_LIMIT = 10;
     const ATTACK_TIME = 10;
     const [timeLeft, setTimeLeft] = useState(TIME_LIMIT);
     const [bossPhase, setBossPhase] = useState("idle");
@@ -46,7 +46,7 @@ export default function GamePage({ params }) {
     const background = backgrounds[bgIndex];
 
     const handleFail = () => {
-        setWaitingBossAttack(true);   // ⏳ chờ boss đánh
+        setWaitingBossAttack(true);
         setBossPhase("attacking");
     };
 
@@ -79,8 +79,16 @@ export default function GamePage({ params }) {
         setScore(0);
         setCombo(0);
         setAnswerResult({ correct: null, id: 0 });
+
+        setTimeLeft(TIME_LIMIT);
+        setBossPhase("idle");
+        setWaitingBossAttack(false);
+        setHasCompleted(false);
+        setIsPaused(false); 
+
         setModalType(null);
     };
+
 
     const onContinue = () => {
         setModalType(null);
@@ -112,6 +120,11 @@ export default function GamePage({ params }) {
         setHasCompleted(false);
         setModalType(null);
         setAnswerResult({ correct: null, id: 0 });
+
+        setTimeLeft(TIME_LIMIT);
+        setBossPhase("idle");
+        setIsPaused(false);
+        setWaitingBossAttack(false);
     }, [level, stage]);
 
     useEffect(() => {
@@ -122,13 +135,28 @@ export default function GamePage({ params }) {
     const triggerFail = () => {
         setWaitingBossAttack(true);
         setBossPhase("attacking");
+
+        setIsPaused(true);
     };
+    
+    useEffect(() => {
+        // mỗi câu hỏi mới → boss đi lại
+        setBossPhase("approaching");
+        setIsPaused(false);
+    }, [index]);
+
 
     useEffect(() => {
-        if (modalType !== null || hasCompleted) return;
+        if (
+            modalType !== null ||
+            hasCompleted ||
+            isPaused ||
+            bossPhase === "attacking"
+        ) {
+            return;
+        }
 
         if (timeLeft <= 0) {
-            setBossPhase("attacking");
             triggerFail();
             return;
         }
@@ -140,7 +168,7 @@ export default function GamePage({ params }) {
         }, 1000);
 
         return () => clearTimeout(timer);
-    }, [timeLeft, modalType, hasCompleted]);
+    }, [timeLeft, modalType, hasCompleted, isPaused, bossPhase]);
 
     function handleAnswer(isCorrect) {
         if (modalType !== null || hasCompleted) return;
@@ -152,7 +180,7 @@ export default function GamePage({ params }) {
 
         if (!isCorrect) {
             setCombo(0);
-            triggerFail(); // 👈 CHỈ KÍCH HOẠT ATTACK
+            triggerFail();
             return;
         }
 
@@ -171,7 +199,6 @@ export default function GamePage({ params }) {
             }, 800);
         }
     }
-
 
     return (
         <div className="relative h-screen overflow-hidden">
@@ -201,7 +228,6 @@ export default function GamePage({ params }) {
                     ⏱ {timeLeft}s
                 </div>
 
-
                 <div className="h-1/2 relative">
                     <BattleScene
                         level={level}
@@ -212,7 +238,7 @@ export default function GamePage({ params }) {
                         attackTime={ATTACK_TIME}
                         onBossAttackComplete={() => {
                             if (waitingBossAttack) {
-                                setModalType("fail");   // ✅ DUY NHẤT 1 CHỖ
+                                setModalType("fail");
                                 setWaitingBossAttack(false);
                             }
                         }}
@@ -269,7 +295,6 @@ export default function GamePage({ params }) {
                         ]}
                     />
                 )}
-
 
                 {modalType === "next" && (
                     <OptionsModal
