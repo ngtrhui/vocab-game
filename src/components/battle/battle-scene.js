@@ -9,10 +9,11 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
     const maxHits = 20;
     const DAMAGE = 1;
     const START_X = 0;
-    const MOVE_DISTANCE = 750; // 👈 chỉnh khoảng cách tại đây
+    const MOVE_DISTANCE = 750;
     const ATTACK_X = START_X - MOVE_DISTANCE;
     const [canShowOptions, setCanShowOptions] = useState(false);
-
+    const HERO_MAX_HP = 1;
+    const [heroHp, setHeroHp] = useState(HERO_MAX_HP);
     const [bossX, setBossX] = useState(START_X);
     const [bossState, setBossState] = useState("idle");
     const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -56,6 +57,17 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
     useEffect(() => {
         if (bossPhase === "attacking") {
             setCanShowOptions(false); // reset
+        }
+    }, [bossPhase]);
+
+    useEffect(() => {
+        setHeroHp(HERO_MAX_HP);
+    }, [level]);
+
+    useEffect(() => {
+        if (bossPhase === "idle") {
+            setHeroState("idle");
+            setHeroHp(HERO_MAX_HP);
         }
     }, [bossPhase]);
 
@@ -122,7 +134,14 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
             >
                 <HeroWizard
                     state={heroState}
-                    onAnimationEnd={() => setHeroState("idle")}
+                    onAnimationEnd={() => {
+                        if (
+                            heroState === "hurt" ||
+                            heroState.startsWith("attack")
+                        ) {
+                            setHeroState("idle");
+                        }
+                    }}
                 />
             </motion.div>
 
@@ -141,7 +160,19 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
                     hit={bossHit}
                     state={bossState}
                     onAttackComplete={() => {
-                        onBossAttackComplete?.(); 
+                        setHeroHp((hp) => {
+                            const nextHp = hp - 1;
+
+                            if (nextHp <= 0) {
+                                setHeroState("dying");
+                                return 0;
+                            }
+
+                            setHeroState("hurt");
+                            return nextHp;
+                        });
+
+                        onBossAttackComplete?.();
                     }}
                     onDyingComplete={() => {
                         if (

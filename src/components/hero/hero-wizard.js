@@ -30,6 +30,18 @@ const SPRITES = {
         fps: 12,
         loop: false,
     },
+    dying: {
+        src: "/assets/characters/hero/wizard/Dying.png",
+        frames: 4,
+        fps: 6,
+        loop: false,
+    },
+    hurt: {
+        src: "/assets/characters/hero/wizard/Hurt.png",
+        frames: 4,
+        fps: 6,
+        loop: false,
+    },
 };
 
 export default function HeroWizard({ state = "idle", onAnimationEnd }) {
@@ -55,7 +67,7 @@ export default function HeroWizard({ state = "idle", onAnimationEnd }) {
 
         return () => clearInterval(interval);
     }, [state]);
-    
+
     useEffect(() => {
         if (finished) {
             onAnimationEnd?.();

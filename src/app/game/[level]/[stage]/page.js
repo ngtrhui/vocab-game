@@ -127,10 +127,10 @@ export default function GamePage({ params }) {
         setWaitingBossAttack(false);
     }, [level, stage]);
 
-    useEffect(() => {
-        setTimeLeft(ATTACK_TIME);
-        setBossPhase("idle");
-    }, [index]);
+    // useEffect(() => {
+    //     setTimeLeft(ATTACK_TIME);
+    //     setBossPhase("idle");
+    // }, [index]);
 
     const triggerFail = () => {
         setWaitingBossAttack(true);
@@ -202,8 +202,7 @@ export default function GamePage({ params }) {
 
     return (
         <div className="relative h-screen overflow-hidden">
-            <div
-                className="absolute inset-0 bg-cover bg-center z-0"
+            <div className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: `url(${background})` }}
             />
             <div className="absolute inset-0 bg-black/40 z-0" />
@@ -220,10 +219,7 @@ export default function GamePage({ params }) {
                         🔥 {STRING.COMBO} x{combo}
                     </div>
                 )}
-                <div
-                    className={`absolute top-4 left-4 z-50 px-4 py-2 rounded-xl font-bold
-    ${timeLeft <= 2 ? "bg-red-600 animate-pulse" : "bg-black/70"}
-  `}
+                <div className={`absolute top-4 left-4 z-50 px-4 py-2 rounded-xl font-bold ${timeLeft <= 2 ? "bg-red-600 animate-pulse" : "bg-black/70"}`}
                 >
                     ⏱ {timeLeft}s
                 </div>
