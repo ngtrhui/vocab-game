@@ -201,6 +201,8 @@ export default function GamePage({ params }) {
                         answerResult={answerResult}
                         isCompleted={hasCompleted}
                         bossPhase={bossPhase}
+                        timeLeft={timeLeft}
+                        attackTime={ATTACK_TIME}
                     />
                 </div>
 

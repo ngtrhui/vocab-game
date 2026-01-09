@@ -12,6 +12,7 @@ export default function Boss({
     hp = 100,
     state: externalState,
     onDyingComplete,
+    onAttackComplete,
 }) {
     const [state, setState] = useState("idle");
     const [frame, setFrame] = useState(0);

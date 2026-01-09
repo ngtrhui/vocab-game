@@ -5,14 +5,17 @@ import { motion } from "framer-motion";
 import Boss from "@/components/boss/boss";
 import HeroWizard from "@/components/hero/hero-wizard";
 
-export default function BattleScene({ answerResult, onBossDead, level, bossPhase, }) {
+export default function BattleScene({ answerResult, onBossDead, level, bossPhase, timeLeft, attackTime, }) {
     const maxHits = 20;
     const DAMAGE = 1;
     const START_X = 0;
-    const ATTACK_X = -180;
+    const MOVE_DISTANCE = 750; // 👈 chỉnh khoảng cách tại đây
+    const ATTACK_X = START_X - MOVE_DISTANCE;
+
 
     const [bossX, setBossX] = useState(START_X);
     const [bossState, setBossState] = useState("idle");
+    const [shouldAnimate, setShouldAnimate] = useState(true);
 
     const [bossHp, setBossHp] = useState(100);
     const [bossHit, setBossHit] = useState(false);
@@ -41,23 +44,36 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
     };
 
     useEffect(() => {
-        switch (bossPhase) {
-            case "approaching":
-                setBossX(ATTACK_X);
-                setBossState("walking");
-                break;
+        if (bossPhase !== "approaching") return;
 
-            case "retreating":
-                setBossX(START_X);
-                setBossState("walking");
-                break;
+        const progress = 1 - timeLeft / attackTime; // 0 → 1
+        const nextX = START_X + (ATTACK_X - START_X) * progress;
 
-            case "attacking":
-                setBossState("attack");
-                break;
+        setBossX(nextX);
+        setBossState("walking");
+    }, [timeLeft, bossPhase, attackTime]);
 
-            default:
-                setBossState("idle");
+    useEffect(() => {
+        if (bossPhase === "idle") {
+            setShouldAnimate(false);   // ❗ không animate
+            setBossX(START_X);
+            setBossState("idle");
+            return;
+        }
+
+        setShouldAnimate(true);
+
+        if (bossPhase === "approaching") {
+            setBossState("walking");
+        }
+
+        if (bossPhase === "retreating") {
+            setBossX(START_X);
+            setBossState("walking");
+        }
+
+        if (bossPhase === "attacking") {
+            setBossState("attack");
         }
     }, [bossPhase]);
 
@@ -106,7 +122,12 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
 
             <motion.div className="absolute bottom: 0.25rem right-20 z-20"
                 animate={{ x: bossX }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
+                initial={false}
+                transition={
+                    shouldAnimate
+                        ? { duration: 0.2, ease: "linear" }
+                        : { duration: 0 }
+                }
             >
                 <Boss
                     level={level}
