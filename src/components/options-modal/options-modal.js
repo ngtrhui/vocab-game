@@ -1,6 +1,6 @@
 "use client";
 
-export default function OptionsModal({title, description, options = [], onOverlayClick,}) {
+export default function OptionsModal({ title, description, options = [], onOverlayClick, }) {
     return (
         <div
             onClick={onOverlayClick}
@@ -8,9 +8,9 @@ export default function OptionsModal({title, description, options = [], onOverla
         >
             <div
                 onClick={(e) => e.stopPropagation()}
-                className="bg-white p-6 rounded-xl text-center w-80 animate-scaleIn"
+                className="bg-[#481E14] p-6 rounded-xl border-2 border-[#9B3922] text-center w-80 animate-scaleIn"
             >
-                <h2 className="text-xl text-gray-900 font-bold mb-4">
+                <h2 className="text-xl text-[#F2613F] font-bold mb-4">
                     {title}
                 </h2>
 

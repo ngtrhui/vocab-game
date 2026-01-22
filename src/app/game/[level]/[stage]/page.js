@@ -13,8 +13,8 @@ import { completeStage, getProgress } from "@/utils/progress";
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
     const router = useRouter();
-    const [waitingBossAttack, setWaitingBossAttack] = useState(false);
 
+    const [waitingBossAttack, setWaitingBossAttack] = useState(false);
     const [index, setIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [combo, setCombo] = useState(0);
@@ -23,11 +23,13 @@ export default function GamePage({ params }) {
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
     const [modalType, setModalType] = useState(null);
+
     const MAX_STAGE_PER_LEVEL = 100;
     const LEVEL_ORDER = ["n5", "n4", "n3", "n2", "n1"];
     const total = roundWords.length;
     const isFinished = index >= total;
     const currentIndex = LEVEL_ORDER.indexOf(level);
+
     const TIME_LIMIT = 10;
     const ATTACK_TIME = 10;
     const [timeLeft, setTimeLeft] = useState(TIME_LIMIT);
@@ -84,11 +86,9 @@ export default function GamePage({ params }) {
         setBossPhase("idle");
         setWaitingBossAttack(false);
         setHasCompleted(false);
-        setIsPaused(false); 
-
+        setIsPaused(false);
         setModalType(null);
     };
-
 
     const onContinue = () => {
         setModalType(null);
@@ -130,15 +130,13 @@ export default function GamePage({ params }) {
     const triggerFail = () => {
         setWaitingBossAttack(true);
         setBossPhase("attacking");
-
         setIsPaused(true);
     };
-    
+
     useEffect(() => {
         setBossPhase("approaching");
         setIsPaused(false);
     }, [index]);
-
 
     useEffect(() => {
         if (
@@ -196,28 +194,58 @@ export default function GamePage({ params }) {
 
     return (
         <div className="relative h-screen overflow-hidden">
-            <div className="absolute inset-0 bg-cover bg-center z-0"
+            {/* Background */}
+            <div
+                className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: `url(${background})` }}
             />
-            <div className="absolute inset-0 bg-black/40 z-0" />
+            <div className="absolute inset-0 bg-black/60 z-0" />
+
             <div className="relative z-10 h-full flex flex-col">
+                {/* Pause button */}
                 <button
                     onClick={() => setModalType("pause")}
-                    className="absolute top-4 right-4 z-50 bg-black px-4 py-2 rounded-lg font-bold"
+                    className="
+                        absolute top-4 right-4 z-50
+                        bg-[#2A0E0A]
+                        text-[#FFF0C4]
+                        px-4 py-2
+                        rounded-xl font-bold
+                        shadow-[0_0_12px_rgba(255,183,3,0.25)]
+                        hover:bg-[#3E0703]
+                    "
                 >
                     ⏸
                 </button>
 
+                {/* Combo */}
                 {combo >= 2 && !isPaused && !showFail && (
-                    <div className="absolute top-4 left-1/2 -translate-x-1/2 text-2xl font-bold text-orange-400 animate-pulse z-40">
+                    <div className="
+                        absolute top-4 left-1/2 -translate-x-1/2
+                        text-2xl font-bold
+                        text-[#FFB703]
+                        animate-pulse
+                        z-40
+                        drop-shadow-[0_0_10px_rgba(255,183,3,0.8)]
+                    ">
                         🔥 {STRING.COMBO} x{combo}
                     </div>
                 )}
-                <div className={`absolute top-4 left-4 z-50 px-4 py-2 rounded-xl font-bold ${timeLeft <= 2 ? "bg-red-600 animate-pulse" : "bg-black/70"}`}
+
+                {/* Timer */}
+                <div
+                    className={`
+                        absolute top-4 left-4 z-50
+                        px-4 py-2 rounded-xl font-bold
+                        ${timeLeft <= 2
+                            ? "bg-[#8C1007] animate-pulse text-[#FFF0C4]"
+                            : "bg-[#1A0E05] text-[#FFF0C4]/80"}
+                    `}
                 >
                     ⏱ {timeLeft}s
                 </div>
 
+                {/* Battle */}
                 <div className="h-1/2 relative">
                     <BattleScene
                         level={level}
@@ -235,6 +263,7 @@ export default function GamePage({ params }) {
                     />
                 </div>
 
+                {/* Question */}
                 {roundWords[index] && (
                     <div className="h-1/2 relative">
                         <QuestionCard
@@ -246,6 +275,7 @@ export default function GamePage({ params }) {
                     </div>
                 )}
 
+                {/* MODALS */}
                 {modalType === "pause" && (
                     <OptionsModal
                         title={`⏸ ${STRING.PAUSE}`}
@@ -254,12 +284,12 @@ export default function GamePage({ params }) {
                         options={[
                             {
                                 label: STRING.CONTINUE,
-                                className: "bg-green-600",
+                                className: "bg-[#FFB703] text-black",
                                 onClick: onContinue,
                             },
                             {
                                 label: STRING.OUT,
-                                className: "bg-red-500",
+                                className: "bg-[#8C1007] text-[#FFF0C4]",
                                 onClick: onExit,
                             },
                         ]}
@@ -274,12 +304,12 @@ export default function GamePage({ params }) {
                         options={[
                             {
                                 label: STRING.START_AGAIN,
-                                className: "bg-yellow-500",
+                                className: "bg-[#3E0703] text-[#FFF0C4]",
                                 onClick: onRestart,
                             },
                             {
                                 label: STRING.OUT,
-                                className: "bg-red-500",
+                                className: "bg-[#8C1007] text-[#FFF0C4]",
                                 onClick: onExit,
                             },
                         ]}
@@ -288,18 +318,18 @@ export default function GamePage({ params }) {
 
                 {modalType === "next" && (
                     <OptionsModal
-                        title={`${STRING.COMPLETE}`}
+                        title={STRING.COMPLETE}
                         description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                         onOverlayClick={onBackToLevel}
                         options={[
                             {
                                 label: STRING.CONTINUE,
-                                className: "bg-green-600",
+                                className: "bg-[#FFB703] text-black",
                                 onClick: onNextStage,
                             },
                             {
                                 label: STRING.OUT,
-                                className: "bg-gray-500",
+                                className: "bg-[#2A0E0A] text-[#FFF0C4]",
                                 onClick: onExit,
                             },
                         ]}

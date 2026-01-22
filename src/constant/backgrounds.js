@@ -9,6 +9,7 @@ export const BACKGROUNDS = {
         "/assets/backgrounds/n4/bg1.png",
         "/assets/backgrounds/n4/bg2.png",
         "/assets/backgrounds/n4/bg3.png",
+        "/assets/backgrounds/n3/bg4.png",
     ],
     n3: [
         "/assets/backgrounds/n3/bg1.png",

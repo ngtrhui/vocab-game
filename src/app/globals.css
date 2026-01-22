@@ -4,8 +4,25 @@
 @tailwind utilities; */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0D0B14;
+  --background-mid: #120E22;
+  --background-to: #1A1026;
+  --foreground: #F5F3F0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+
+  background: linear-gradient(to bottom,
+      var(--background),
+      var(--background-to));
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: var(--foreground);
 }
 
 @theme inline {
