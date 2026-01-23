@@ -9,6 +9,7 @@ import OptionsModal from "@/components/options-modal/options-modal";
 import * as STRING from "@/constant/strings";
 import { BACKGROUNDS } from "@/constant/backgrounds";
 import { completeStage, getProgress } from "@/utils/progress";
+import { playBGM, stopBGM } from "@/utils/sound";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
@@ -47,6 +48,14 @@ export default function GamePage({ params }) {
 
     const background = backgrounds[bgIndex];
 
+    useEffect(() => {
+        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+
+        return () => {
+            stopBGM();
+        };
+    }, []);
+
     const handleFail = () => {
         setWaitingBossAttack(true);
         setBossPhase("attacking");
@@ -72,11 +81,14 @@ export default function GamePage({ params }) {
     };
 
     const onExit = () => {
+        stopBGM();
         setModalType(null);
         router.replace(`/level/${level}`);
     };
 
     const onRestart = () => {
+        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+
         setIndex(0);
         setScore(0);
         setCombo(0);
@@ -91,10 +103,12 @@ export default function GamePage({ params }) {
     };
 
     const onContinue = () => {
+        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
         setModalType(null);
     };
 
     const onBackToLevel = () => {
+        stopBGM();
         setModalType(null);
         router.replace(`/level/${level}`);
     };
@@ -194,7 +208,6 @@ export default function GamePage({ params }) {
 
     return (
         <div className="relative h-screen overflow-hidden">
-            {/* Background */}
             <div
                 className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: `url(${background})` }}
@@ -202,50 +215,26 @@ export default function GamePage({ params }) {
             <div className="absolute inset-0 bg-black/60 z-0" />
 
             <div className="relative z-10 h-full flex flex-col">
-                {/* Pause button */}
                 <button
-                    onClick={() => setModalType("pause")}
-                    className="
-                        absolute top-4 right-4 z-50
-                        bg-[#2A0E0A]
-                        text-[#FFF0C4]
-                        px-4 py-2
-                        rounded-xl font-bold
-                        shadow-[0_0_12px_rgba(255,183,3,0.25)]
-                        hover:bg-[#3E0703]
-                    "
+                    onClick={() => {
+                        stopBGM();
+                        setModalType("pause");
+                    }}
+                    className="absolute top-4 right-4 z-50 bg-[#2A0E0A] text-[#FFF0C4] px-4 py-2 rounded-xl font-bold"
                 >
                     ⏸
                 </button>
 
-                {/* Combo */}
                 {combo >= 2 && !isPaused && !showFail && (
-                    <div className="
-                        absolute top-4 left-1/2 -translate-x-1/2
-                        text-2xl font-bold
-                        text-[#FFB703]
-                        animate-pulse
-                        z-40
-                        drop-shadow-[0_0_10px_rgba(255,183,3,0.8)]
-                    ">
+                    <div className="absolute top-4 left-1/2 -translate-x-1/2 text-2xl font-bold text-[#FFB703] animate-pulse z-40">
                         🔥 {STRING.COMBO} x{combo}
                     </div>
                 )}
 
-                {/* Timer */}
-                <div
-                    className={`
-                        absolute top-4 left-4 z-50
-                        px-4 py-2 rounded-xl font-bold
-                        ${timeLeft <= 2
-                            ? "bg-[#8C1007] animate-pulse text-[#FFF0C4]"
-                            : "bg-[#1A0E05] text-[#FFF0C4]/80"}
-                    `}
-                >
+                <div className="absolute top-4 left-4 z-50 px-4 py-2 rounded-xl font-bold bg-[#1A0E05] text-[#FFF0C4]/80">
                     ⏱ {timeLeft}s
                 </div>
 
-                {/* Battle */}
                 <div className="h-1/2 relative">
                     <BattleScene
                         level={level}
@@ -263,7 +252,6 @@ export default function GamePage({ params }) {
                     />
                 </div>
 
-                {/* Question */}
                 {roundWords[index] && (
                     <div className="h-1/2 relative">
                         <QuestionCard
@@ -275,7 +263,6 @@ export default function GamePage({ params }) {
                     </div>
                 )}
 
-                {/* MODALS */}
                 {modalType === "pause" && (
                     <OptionsModal
                         title={`⏸ ${STRING.PAUSE}`}
