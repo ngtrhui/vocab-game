@@ -9,7 +9,9 @@ import OptionsModal from "@/components/options-modal/options-modal";
 import * as STRING from "@/constant/strings";
 import { BACKGROUNDS } from "@/constant/backgrounds";
 import { completeStage, getProgress } from "@/utils/progress";
-import { playBGM, stopBGM } from "@/utils/sound";
+
+// 🔊 SOUND
+import { playBGM, stopBGM, playSFX } from "@/utils/sound";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
@@ -28,7 +30,6 @@ export default function GamePage({ params }) {
     const MAX_STAGE_PER_LEVEL = 100;
     const LEVEL_ORDER = ["n5", "n4", "n3", "n2", "n1"];
     const total = roundWords.length;
-    const isFinished = index >= total;
     const currentIndex = LEVEL_ORDER.indexOf(level);
 
     const TIME_LIMIT = 10;
@@ -48,12 +49,10 @@ export default function GamePage({ params }) {
 
     const background = backgrounds[bgIndex];
 
+    // 🎵 BGM
     useEffect(() => {
         playBGM("/sounds/bgm/gameplay.mp3", 0.25);
-
-        return () => {
-            stopBGM();
-        };
+        return () => stopBGM();
     }, []);
 
     const handleFail = () => {
@@ -142,6 +141,9 @@ export default function GamePage({ params }) {
     }, [level, stage]);
 
     const triggerFail = () => {
+        // ❌ WRONG SFX
+        playSFX("/sounds/sfx/wrong.mp3", 0.7);
+
         setWaitingBossAttack(true);
         setBossPhase("attacking");
         setIsPaused(true);
@@ -185,10 +187,16 @@ export default function GamePage({ params }) {
         }));
 
         if (!isCorrect) {
+            // ❌ WRONG
+            playSFX("/sounds/sfx/wrong.mp3", 0.7);
+
             setCombo(0);
             triggerFail();
             return;
         }
+
+        // ✅ CORRECT
+        playSFX("/sounds/sfx/correct.mp3", 0.6);
 
         setBossPhase("retreating");
 
@@ -200,9 +208,12 @@ export default function GamePage({ params }) {
         if (nextIndex === total) {
             setHasCompleted(true);
             completeStage(level, stage);
+
             setTimeout(() => {
+                // 🎉 WIN
+                playSFX("/sounds/sfx/win.mp3", 0.8);
                 setModalType("next");
-            }, 800);
+            }, 300);
         }
     }
 

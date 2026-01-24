@@ -19,3 +19,11 @@ export function stopBGM() {
     bgm.pause();
     bgm.currentTime = 0;
 }
+
+export function playSFX(src, volume = 0.6) {
+    if (typeof window === "undefined") return;
+
+    const sfx = new Audio(src);
+    sfx.volume = volume;
+    sfx.play().catch(() => { });
+}

@@ -55,7 +55,6 @@ export default function Boss({
                 if (next >= sprite.frames) {
                     if (sprite.loop) return 0;
 
-                    // ✅ attack xong
                     if (state === "attack") {
                         onAttackComplete?.();
                         setState("idle");
@@ -67,13 +66,13 @@ export default function Boss({
                         return sprite.frames - 1;
                     }
 
-                    setState("idle");
+                    setState(externalState || "idle");
                     return 0;
                 }
 
                 return next;
             });
-        }, 1000 / sprite.fps);
+        }, 400 / sprite.fps);
 
         return () => clearInterval(interval);
     }, [sprite, state]);
