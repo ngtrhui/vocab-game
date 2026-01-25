@@ -9,8 +9,6 @@ import OptionsModal from "@/components/options-modal/options-modal";
 import * as STRING from "@/constant/strings";
 import { BACKGROUNDS } from "@/constant/backgrounds";
 import { completeStage, getProgress } from "@/utils/progress";
-
-// 🔊 SOUND
 import { playBGM, stopBGM, playSFX } from "@/utils/sound";
 
 export default function GamePage({ params }) {
@@ -81,13 +79,14 @@ export default function GamePage({ params }) {
 
     const onExit = () => {
         stopBGM();
+        setIsPaused(false);
         setModalType(null);
         router.replace(`/level/${level}`);
     };
 
     const onRestart = () => {
         playBGM("/sounds/bgm/gameplay.mp3", 0.25);
-
+        setIsPaused(false);
         setIndex(0);
         setScore(0);
         setCombo(0);
@@ -103,6 +102,7 @@ export default function GamePage({ params }) {
 
     const onContinue = () => {
         playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+        setIsPaused(false);
         setModalType(null);
     };
 
@@ -141,7 +141,6 @@ export default function GamePage({ params }) {
     }, [level, stage]);
 
     const triggerFail = () => {
-        // ❌ WRONG SFX
         playSFX("/sounds/sfx/wrong.mp3", 0.7);
 
         setWaitingBossAttack(true);
@@ -149,10 +148,10 @@ export default function GamePage({ params }) {
         setIsPaused(true);
     };
 
-    useEffect(() => {
-        setBossPhase("approaching");
-        setIsPaused(false);
-    }, [index]);
+    // useEffect(() => {
+    //     setBossPhase("approaching");
+    //     setIsPaused(false);
+    // }, [index]);
 
     useEffect(() => {
         if (
@@ -187,7 +186,6 @@ export default function GamePage({ params }) {
         }));
 
         if (!isCorrect) {
-            // ❌ WRONG
             playSFX("/sounds/sfx/wrong.mp3", 0.7);
 
             setCombo(0);
@@ -195,7 +193,6 @@ export default function GamePage({ params }) {
             return;
         }
 
-        // ✅ CORRECT
         playSFX("/sounds/sfx/correct.mp3", 0.6);
 
         setBossPhase("retreating");
@@ -229,6 +226,7 @@ export default function GamePage({ params }) {
                 <button
                     onClick={() => {
                         stopBGM();
+                        setIsPaused(true);
                         setModalType("pause");
                     }}
                     className="absolute top-4 right-4 z-50 bg-[#2A0E0A] text-[#FFF0C4] px-4 py-2 rounded-xl font-bold"
@@ -254,6 +252,10 @@ export default function GamePage({ params }) {
                         bossPhase={bossPhase}
                         timeLeft={timeLeft}
                         attackTime={ATTACK_TIME}
+                        isPaused={isPaused}
+                        onBossAttackComplete={() => {
+                            setBossPhase("approaching"); // 🔥 quay lại đi tiếp
+                        }}
                         onHeroDyingComplete={() => {
                             if (waitingBossAttack) {
                                 setModalType("fail");
@@ -335,5 +337,5 @@ export default function GamePage({ params }) {
                 )}
             </div>
         </div>
-    );
+    )
 }

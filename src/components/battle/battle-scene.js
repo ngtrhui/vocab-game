@@ -1,29 +1,39 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, animate } from "framer-motion";
 import Boss from "@/components/boss/boss";
 import HeroWizard from "@/components/hero/hero-wizard";
 
-export default function BattleScene({ answerResult, onBossDead, level, bossPhase, timeLeft, attackTime, onBossAttackComplete, onHeroDyingComplete, }) {
+export default function BattleScene({
+    answerResult,
+    onBossDead,
+    level,
+    bossPhase,
+    timeLeft,
+    attackTime,
+    isPaused,
+    onBossAttackComplete,
+    onHeroDyingComplete,
+}) {
     const maxHits = 20;
     const DAMAGE = 1;
+
     const START_X = 0;
     const MOVE_DISTANCE = 750;
     const ATTACK_X = START_X - MOVE_DISTANCE;
     const [canShowOptions, setCanShowOptions] = useState(false);
     const HERO_MAX_HP = 1;
     const [heroHp, setHeroHp] = useState(HERO_MAX_HP);
-    const [bossX, setBossX] = useState(START_X);
     const [bossState, setBossState] = useState("idle");
-    const [shouldAnimate, setShouldAnimate] = useState(true);
-
     const [bossHp, setBossHp] = useState(100);
     const [bossHit, setBossHit] = useState(false);
     const [heroState, setHeroState] = useState("idle");
     const [correctCount, setCorrectCount] = useState(0);
     const lastAnswerId = useRef(null);
     const hasNotifiedDead = useRef(false);
+    const bossX = useMotionValue(START_X);
+    const bossAnimationRef = useRef(null);
 
     const handleHeroAttack = () => {
         setHeroState(
@@ -44,15 +54,26 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
         setTimeout(() => setBossHit(false), 200);
     };
 
-    useEffect(() => {
-        if (bossPhase !== "approaching") return;
+    // useEffect(() => {
+    //     if (isPaused) {
+    //         bossAnimationRef.current?.stop();
+    //         return;
+    //     }
 
-        const progress = 1 - timeLeft / attackTime;
-        const nextX = START_X + (ATTACK_X - START_X) * progress;
+    //     if (bossPhase === "approaching") {
+    //         const currentX = bossX.get();
+    //         const totalDistance = Math.abs(ATTACK_X - START_X);
+    //         const remainingDistance = Math.abs(ATTACK_X - currentX);
 
-        setBossX(nextX);
-        setBossState("walking");
-    }, [timeLeft, bossPhase, attackTime]);
+    //         const remainingTime =
+    //             (remainingDistance / totalDistance) * attackTime;
+
+    //         bossAnimationRef.current = animate(bossX, ATTACK_X, {
+    //             duration: remainingTime,
+    //             ease: "linear",
+    //         });
+    //     }
+    // }, [isPaused]);
 
     useEffect(() => {
         if (bossPhase === "attacking") {
@@ -73,32 +94,68 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
 
     useEffect(() => {
         if (bossPhase === "idle") {
-            setShouldAnimate(false);
-            setBossX(START_X);
+            bossAnimationRef.current?.stop();
+            bossX.set(START_X);
             setBossState("idle");
             return;
         }
 
-        setShouldAnimate(true);
-
         if (bossPhase === "approaching") {
             setBossState("walking");
+
+            bossAnimationRef.current?.stop();
+            bossX.set(START_X);
+            const currentX = bossX.get();
+            const totalDistance = Math.abs(ATTACK_X - START_X);
+            const remainingDistance = Math.abs(ATTACK_X - currentX);
+
+            const remainingTime =
+                (remainingDistance / totalDistance) * attackTime;
+
+            if (!isPaused) {
+                bossAnimationRef.current = animate(bossX, ATTACK_X, {
+                    duration: remainingTime,
+                    ease: "linear",
+                });
+            }
         }
 
         if (bossPhase === "retreating") {
-            setBossX(START_X);
             setBossState("walking");
+
+            bossAnimationRef.current?.stop();
+
+            bossAnimationRef.current = animate(bossX, START_X, {
+                duration: 0.6,
+                ease: "easeOut",
+                onComplete: () => {
+                    if (!isPaused) {
+                        onBossAttackComplete?.(); // 🔥 báo đã retreat xong
+                    }
+                },
+            });
         }
 
         if (bossPhase === "attacking") {
+            bossAnimationRef.current?.stop();
             setBossState("attack");
         }
-    }, [bossPhase]);
+
+        return () => {
+            bossAnimationRef.current?.stop();
+        };
+    }, [bossPhase, isPaused, attackTime]);
+
+
+    useEffect(() => {
+        setHeroHp(HERO_MAX_HP);
+    }, [level]);
 
     useEffect(() => {
         setBossHp(100);
         setBossHit(false);
         hasNotifiedDead.current = false;
+        bossX.set(START_X);
     }, [level]);
 
     useEffect(() => {
@@ -114,9 +171,8 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
 
         if (answerResult.correct) {
             setCorrectCount((c) => {
-                const next = c + 1;
                 handleHeroAttack();
-                return next;
+                return c + 1;
             });
         } else {
             setCorrectCount(0);
@@ -125,9 +181,14 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
         }
     }, [answerResult]);
 
+    useEffect(() => {
+        if (correctCount === maxHits && bossHp > 0) {
+            setBossHp(0);
+        }
+    }, [correctCount, bossHp]);
+
     return (
         <div className="absolute inset-0 overflow-hidden">
-
             <motion.div
                 className="absolute bottom-10 left-20 z-20"
                 animate={heroState !== "idle" ? { x: [0, 40, 0] } : {}}
@@ -154,14 +215,9 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
                 />
             </motion.div>
 
-            <motion.div className="absolute bottom: 0.25rem right-20 z-20"
-                animate={{ x: bossX }}
-                initial={false}
-                transition={
-                    shouldAnimate
-                        ? { duration: 0.2, ease: "linear" }
-                        : { duration: 0 }
-                }
+            <motion.div
+                className="absolute bottom:0.25rem right-20 z-20"
+                style={{ x: bossX }}
             >
                 <Boss
                     level={level}
@@ -176,7 +232,6 @@ export default function BattleScene({ answerResult, onBossDead, level, bossPhase
                             return Math.max(0, nextHp);
                         });
                     }}
-
                     onDyingComplete={() => {
                         if (
                             !hasNotifiedDead.current &&
