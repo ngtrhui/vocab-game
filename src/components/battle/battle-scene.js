@@ -10,7 +10,6 @@ export default function BattleScene({
     onBossDead,
     level,
     bossPhase,
-    timeLeft,
     attackTime,
     isPaused,
     onBossAttackComplete,
@@ -54,27 +53,6 @@ export default function BattleScene({
         setTimeout(() => setBossHit(false), 200);
     };
 
-    // useEffect(() => {
-    //     if (isPaused) {
-    //         bossAnimationRef.current?.stop();
-    //         return;
-    //     }
-
-    //     if (bossPhase === "approaching") {
-    //         const currentX = bossX.get();
-    //         const totalDistance = Math.abs(ATTACK_X - START_X);
-    //         const remainingDistance = Math.abs(ATTACK_X - currentX);
-
-    //         const remainingTime =
-    //             (remainingDistance / totalDistance) * attackTime;
-
-    //         bossAnimationRef.current = animate(bossX, ATTACK_X, {
-    //             duration: remainingTime,
-    //             ease: "linear",
-    //         });
-    //     }
-    // }, [isPaused]);
-
     useEffect(() => {
         if (bossPhase === "attacking") {
             setCanShowOptions(false);
@@ -104,7 +82,11 @@ export default function BattleScene({
             setBossState("walking");
 
             bossAnimationRef.current?.stop();
-            bossX.set(START_X);
+
+            if (!isPaused) {
+                bossX.set(START_X);
+            }
+
             const currentX = bossX.get();
             const totalDistance = Math.abs(ATTACK_X - START_X);
             const remainingDistance = Math.abs(ATTACK_X - currentX);
@@ -120,6 +102,7 @@ export default function BattleScene({
             }
         }
 
+
         if (bossPhase === "retreating") {
             setBossState("walking");
 
@@ -130,7 +113,7 @@ export default function BattleScene({
                 ease: "easeOut",
                 onComplete: () => {
                     if (!isPaused) {
-                        onBossAttackComplete?.(); // 🔥 báo đã retreat xong
+                        onBossAttackComplete?.();
                     }
                 },
             });
