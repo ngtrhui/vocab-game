@@ -16,8 +16,16 @@ export default function GameModals({
                 title={`⏸ ${STRING.PAUSE}`}
                 description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                 options={[
-                    { label: STRING.CONTINUE, onClick: onContinue },
-                    { label: STRING.OUT, onClick: onExit },
+                    {
+                        label: STRING.CONTINUE,
+                        onClick: onContinue,
+                        variant: "primary", // xanh
+                    },
+                    {
+                        label: STRING.OUT,
+                        onClick: onExit,
+                        variant: "secondary", // xám
+                    },
                 ]}
             />
         );
@@ -29,8 +37,16 @@ export default function GameModals({
                 title={STRING.INCORRECT_ANSWER}
                 description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                 options={[
-                    { label: STRING.START_AGAIN, onClick: onRestart },
-                    { label: STRING.OUT, onClick: onExit },
+                    {
+                        label: STRING.START_AGAIN,
+                        onClick: onRestart,
+                        variant: "danger", // đỏ
+                    },
+                    {
+                        label: STRING.OUT,
+                        onClick: onExit,
+                        variant: "secondary", // xám
+                    },
                 ]}
             />
         );
@@ -42,10 +58,19 @@ export default function GameModals({
                 title={STRING.COMPLETE}
                 description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
                 options={[
-                    { label: STRING.CONTINUE, onClick: onNext },
-                    { label: STRING.OUT, onClick: onExit },
+                    {
+                        label: STRING.CONTINUE,
+                        onClick: onNext,
+                        variant: "primary", // xanh
+                    },
+                    {
+                        label: STRING.OUT,
+                        onClick: onExit,
+                        variant: "secondary",
+                    },
                 ]}
             />
         );
     }
+
 }

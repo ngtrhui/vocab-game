@@ -7,7 +7,7 @@ import QuestionCard from "@/components/question-card/question-card";
 import BattleScene from "@/components/battle/battle-scene";
 import * as STRING from "@/constant/strings";
 import { BACKGROUNDS } from "@/constant/backgrounds";
-import { completeStage, getProgress } from "@/utils/progress";
+import { completeStage} from "@/utils/progress";
 import { playBGM, stopBGM, playSFX } from "@/utils/sound";
 import GameHUD from "@/components/gameHUD/GameHUD";
 import GameModals from "@/components/game-modals/game-modals";
@@ -15,7 +15,6 @@ import GameModals from "@/components/game-modals/game-modals";
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
     const router = useRouter();
-
     const [waitingBossAttack, setWaitingBossAttack] = useState(false);
     const [index, setIndex] = useState(0);
     const [score, setScore] = useState(0);
@@ -24,12 +23,10 @@ export default function GamePage({ params }) {
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
     const [modalType, setModalType] = useState(null);
-
     const MAX_STAGE_PER_LEVEL = 100;
     const LEVEL_ORDER = ["n5", "n4", "n3", "n2", "n1"];
     const total = roundWords.length;
     const currentIndex = LEVEL_ORDER.indexOf(level);
-
     const TIME_LIMIT = 10;
     const ATTACK_TIME = 10;
     const [timeLeft, setTimeLeft] = useState(TIME_LIMIT);
@@ -65,12 +62,6 @@ export default function GamePage({ params }) {
             setModalType(null);
         },
 
-        fail() {
-            setWaitingBossAttack(true);
-            setBossPhase("attacking");
-            setIsPaused(true);
-        },
-
         restart() {
             playBGM("/sounds/bgm/gameplay.mp3", 0.25);
             setIndex(0);
@@ -81,6 +72,13 @@ export default function GamePage({ params }) {
             setIsPaused(false);
             setHasCompleted(false);
             setModalType(null);
+        },
+
+        exit() {
+            stopBGM();
+            setIsPaused(false);
+            setModalType(null);
+            router.replace(`/level/${level}`);
         },
     };
 
@@ -211,11 +209,7 @@ export default function GamePage({ params }) {
                 <GameHUD
                     timeLeft={timeLeft}
                     combo={combo}
-                    onPause={() => {
-                        stopBGM();
-                        setIsPaused(true);
-                        setModalType("pause");
-                    }}
+                    onPause={actions.pause}
                 />
 
                 <div className="h-1/2 relative">
@@ -228,7 +222,7 @@ export default function GamePage({ params }) {
                         attackTime={ATTACK_TIME}
                         isPaused={isPaused}
                         onBossAttackComplete={() => {
-                            setBossPhase("approaching"); // 🔥 quay lại đi tiếp
+                            setBossPhase("approaching");
                         }}
                         onHeroDyingComplete={() => {
                             if (waitingBossAttack) {
@@ -252,28 +246,9 @@ export default function GamePage({ params }) {
 
                 <GameModals
                     type={modalType}
-                    onContinue={() => {
-                        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
-                        setIsPaused(false);
-                        setModalType(null);
-                    }}
-                    onRestart={() => {
-                        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
-                        setIndex(0);
-                        setScore(0);
-                        setCombo(0);
-                        setTimeLeft(TIME_LIMIT);
-                        setBossPhase("idle");
-                        setIsPaused(false);
-                        setHasCompleted(false);
-                        setModalType(null);
-                    }}
-                    onExit={() => {
-                        stopBGM();
-                        setIsPaused(false);
-                        setModalType(null);
-                        router.replace(`/level/${level}`);
-                    }}
+                    onContinue={actions.continue}
+                    onRestart={actions.restart}
+                    onExit={actions.exit}
                     onNext={onNextStage}
                 />
 
