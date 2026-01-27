@@ -17,7 +17,7 @@ export default function BattleScene({
 }) {
     const maxHits = 20;
     const DAMAGE = 1;
-
+    const lastBossPhase = useRef(bossPhase);
     const START_X = 0;
     const MOVE_DISTANCE = 750;
     const ATTACK_X = START_X - MOVE_DISTANCE;
@@ -71,6 +71,9 @@ export default function BattleScene({
     }, [bossPhase]);
 
     useEffect(() => {
+        const phaseChanged = lastBossPhase.current !== bossPhase;
+        lastBossPhase.current = bossPhase;
+
         if (bossPhase === "idle") {
             bossAnimationRef.current?.stop();
             bossX.set(START_X);
@@ -80,12 +83,14 @@ export default function BattleScene({
 
         if (bossPhase === "approaching") {
             setBossState("walking");
-
             bossAnimationRef.current?.stop();
 
-            if (!isPaused) {
+            // ✅ CHỈ reset vị trí khi phase mới bắt đầu
+            if (phaseChanged) {
                 bossX.set(START_X);
             }
+
+            if (isPaused) return;
 
             const currentX = bossX.get();
             const totalDistance = Math.abs(ATTACK_X - START_X);
@@ -94,28 +99,22 @@ export default function BattleScene({
             const remainingTime =
                 (remainingDistance / totalDistance) * attackTime;
 
-            if (!isPaused) {
-                bossAnimationRef.current = animate(bossX, ATTACK_X, {
-                    duration: remainingTime,
-                    ease: "linear",
-                });
-            }
+            bossAnimationRef.current = animate(bossX, ATTACK_X, {
+                duration: remainingTime,
+                ease: "linear",
+            });
         }
-
 
         if (bossPhase === "retreating") {
             setBossState("walking");
-
             bossAnimationRef.current?.stop();
+
+            if (isPaused) return;
 
             bossAnimationRef.current = animate(bossX, START_X, {
                 duration: 0.6,
                 ease: "easeOut",
-                onComplete: () => {
-                    if (!isPaused) {
-                        onBossAttackComplete?.();
-                    }
-                },
+                onComplete: onBossAttackComplete,
             });
         }
 
@@ -124,11 +123,8 @@ export default function BattleScene({
             setBossState("attack");
         }
 
-        return () => {
-            bossAnimationRef.current?.stop();
-        };
+        return () => bossAnimationRef.current?.stop();
     }, [bossPhase, isPaused, attackTime]);
-
 
     useEffect(() => {
         setHeroHp(HERO_MAX_HP);
