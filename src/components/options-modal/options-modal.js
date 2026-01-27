@@ -1,4 +1,23 @@
 "use client";
+const BUTTON_VARIANTS = {
+    primary: `
+        bg-[#7A1E1E]
+        hover:bg-[#9B3922]
+        shadow-[0_0_12px_rgba(155,57,34,0.6)]
+    `,
+
+    danger: `
+        bg-[#9B111E]
+        hover:bg-[#C4161C]
+        shadow-[0_0_14px_rgba(196,22,28,0.8)]
+    `,
+
+    secondary: `
+        bg-[#3A1B2F]
+        hover:bg-[#4C2540]
+        shadow-[0_0_10px_rgba(76,37,64,0.5)]
+    `,
+};
 
 export default function OptionsModal({ title, description, options = [], onOverlayClick, }) {
     return (
@@ -25,10 +44,15 @@ export default function OptionsModal({ title, description, options = [], onOverl
                         <button
                             key={index}
                             onClick={opt.onClick}
-                            className={`px-4 py-2 rounded text-white cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg
-                                ${opt.className}
-                            `}
+                            className={`
+        px-4 py-2 rounded
+        text-white font-semibold
+        cursor-pointer transition-all duration-200
+        hover:scale-105 hover:shadow-lg
+        ${BUTTON_VARIANTS[opt.variant || "secondary"]}
+    `}
                         >
+
                             {opt.icon && <span className="mr-1">{opt.icon}</span>}
                             {opt.label}
                         </button>
