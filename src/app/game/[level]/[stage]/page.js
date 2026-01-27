@@ -5,11 +5,12 @@ import { useState, use, useEffect } from "react";
 import { getStageWords } from "@/services/vocabularyService";
 import QuestionCard from "@/components/question-card/question-card";
 import BattleScene from "@/components/battle/battle-scene";
-import OptionsModal from "@/components/options-modal/options-modal";
 import * as STRING from "@/constant/strings";
 import { BACKGROUNDS } from "@/constant/backgrounds";
 import { completeStage, getProgress } from "@/utils/progress";
 import { playBGM, stopBGM, playSFX } from "@/utils/sound";
+import GameHUD from "@/components/gameHUD/GameHUD";
+import GameModals from "@/components/game-modals/game-modals";
 
 export default function GamePage({ params }) {
     const { level, stage } = use(params);
@@ -20,7 +21,6 @@ export default function GamePage({ params }) {
     const [score, setScore] = useState(0);
     const [combo, setCombo] = useState(0);
     const [roundWords, setRoundWords] = useState([]);
-    const [showFail, setShowFail] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [hasCompleted, setHasCompleted] = useState(false);
     const [modalType, setModalType] = useState(null);
@@ -47,15 +47,41 @@ export default function GamePage({ params }) {
 
     const background = backgrounds[bgIndex];
 
-    // 🎵 BGM
     useEffect(() => {
         playBGM("/sounds/bgm/gameplay.mp3", 0.25);
         return () => stopBGM();
     }, []);
 
-    const handleFail = () => {
-        setWaitingBossAttack(true);
-        setBossPhase("attacking");
+    const actions = {
+        pause() {
+            stopBGM();
+            setIsPaused(true);
+            setModalType("pause");
+        },
+
+        continue() {
+            playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+            setIsPaused(false);
+            setModalType(null);
+        },
+
+        fail() {
+            setWaitingBossAttack(true);
+            setBossPhase("attacking");
+            setIsPaused(true);
+        },
+
+        restart() {
+            playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+            setIndex(0);
+            setScore(0);
+            setCombo(0);
+            setTimeLeft(TIME_LIMIT);
+            setBossPhase("idle");
+            setIsPaused(false);
+            setHasCompleted(false);
+            setModalType(null);
+        },
     };
 
     const onNextStage = () => {
@@ -75,41 +101,6 @@ export default function GamePage({ params }) {
         }
 
         router.replace(`/level`);
-    };
-
-    const onExit = () => {
-        stopBGM();
-        setIsPaused(false);
-        setModalType(null);
-        router.replace(`/level/${level}`);
-    };
-
-    const onRestart = () => {
-        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
-        setIsPaused(false);
-        setIndex(0);
-        setScore(0);
-        setCombo(0);
-        setAnswerResult({ correct: null, id: 0 });
-
-        setTimeLeft(TIME_LIMIT);
-        setBossPhase("idle");
-        setWaitingBossAttack(false);
-        setHasCompleted(false);
-        setIsPaused(false);
-        setModalType(null);
-    };
-
-    const onContinue = () => {
-        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
-        setIsPaused(false);
-        setModalType(null);
-    };
-
-    const onBackToLevel = () => {
-        stopBGM();
-        setModalType(null);
-        router.replace(`/level/${level}`);
     };
 
     useEffect(() => {
@@ -147,11 +138,6 @@ export default function GamePage({ params }) {
         setBossPhase("attacking");
         setIsPaused(true);
     };
-
-    // useEffect(() => {
-    //     setBossPhase("approaching");
-    //     setIsPaused(false);
-    // }, [index]);
 
     useEffect(() => {
         if (
@@ -207,7 +193,6 @@ export default function GamePage({ params }) {
             completeStage(level, stage);
 
             setTimeout(() => {
-                // 🎉 WIN
                 playSFX("/sounds/sfx/win.mp3", 0.8);
                 setModalType("next");
             }, 300);
@@ -223,26 +208,15 @@ export default function GamePage({ params }) {
             <div className="absolute inset-0 bg-black/60 z-0" />
 
             <div className="relative z-10 h-full flex flex-col">
-                <button
-                    onClick={() => {
+                <GameHUD
+                    timeLeft={timeLeft}
+                    combo={combo}
+                    onPause={() => {
                         stopBGM();
                         setIsPaused(true);
                         setModalType("pause");
                     }}
-                    className="absolute top-4 right-4 z-50 bg-[#2A0E0A] text-[#FFF0C4] px-4 py-2 rounded-xl font-bold"
-                >
-                    ⏸
-                </button>
-
-                {combo >= 2 && !isPaused && !showFail && (
-                    <div className="absolute top-4 left-1/2 -translate-x-1/2 text-2xl font-bold text-[#FFB703] animate-pulse z-40">
-                        🔥 {STRING.COMBO} x{combo}
-                    </div>
-                )}
-
-                <div className="absolute top-4 left-4 z-50 px-4 py-2 rounded-xl font-bold bg-[#1A0E05] text-[#FFF0C4]/80">
-                    ⏱ {timeLeft}s
-                </div>
+                />
 
                 <div className="h-1/2 relative">
                     <BattleScene
@@ -276,65 +250,33 @@ export default function GamePage({ params }) {
                     </div>
                 )}
 
-                {modalType === "pause" && (
-                    <OptionsModal
-                        title={`⏸ ${STRING.PAUSE}`}
-                        description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
-                        onOverlayClick={onContinue}
-                        options={[
-                            {
-                                label: STRING.CONTINUE,
-                                className: "bg-[#FFB703] text-black",
-                                onClick: onContinue,
-                            },
-                            {
-                                label: STRING.OUT,
-                                className: "bg-[#8C1007] text-[#FFF0C4]",
-                                onClick: onExit,
-                            },
-                        ]}
-                    />
-                )}
+                <GameModals
+                    type={modalType}
+                    onContinue={() => {
+                        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+                        setIsPaused(false);
+                        setModalType(null);
+                    }}
+                    onRestart={() => {
+                        playBGM("/sounds/bgm/gameplay.mp3", 0.25);
+                        setIndex(0);
+                        setScore(0);
+                        setCombo(0);
+                        setTimeLeft(TIME_LIMIT);
+                        setBossPhase("idle");
+                        setIsPaused(false);
+                        setHasCompleted(false);
+                        setModalType(null);
+                    }}
+                    onExit={() => {
+                        stopBGM();
+                        setIsPaused(false);
+                        setModalType(null);
+                        router.replace(`/level/${level}`);
+                    }}
+                    onNext={onNextStage}
+                />
 
-                {modalType === "fail" && (
-                    <OptionsModal
-                        title={STRING.INCORRECT_ANSWER}
-                        description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
-                        onOverlayClick={onRestart}
-                        options={[
-                            {
-                                label: STRING.START_AGAIN,
-                                className: "bg-[#3E0703] text-[#FFF0C4]",
-                                onClick: onRestart,
-                            },
-                            {
-                                label: STRING.OUT,
-                                className: "bg-[#8C1007] text-[#FFF0C4]",
-                                onClick: onExit,
-                            },
-                        ]}
-                    />
-                )}
-
-                {modalType === "next" && (
-                    <OptionsModal
-                        title={STRING.COMPLETE}
-                        description={STRING.WHAT_DO_YOU_WANT_TO_DO_NEXT}
-                        onOverlayClick={onBackToLevel}
-                        options={[
-                            {
-                                label: STRING.CONTINUE,
-                                className: "bg-[#FFB703] text-black",
-                                onClick: onNextStage,
-                            },
-                            {
-                                label: STRING.OUT,
-                                className: "bg-[#2A0E0A] text-[#FFF0C4]",
-                                onClick: onExit,
-                            },
-                        ]}
-                    />
-                )}
             </div>
         </div>
     )
