@@ -33,6 +33,8 @@ export default function BattleScene({
     const hasNotifiedDead = useRef(false);
     const bossX = useMotionValue(START_X);
     const bossAnimationRef = useRef(null);
+    const ATTACK_THRESHOLD = 9; 
+    const JUMP_ATTACK_TIME = 0.25;
 
     const handleHeroAttack = () => {
         setHeroState(
@@ -85,7 +87,6 @@ export default function BattleScene({
             setBossState("walking");
             bossAnimationRef.current?.stop();
 
-            // ✅ CHỈ reset vị trí khi phase mới bắt đầu
             if (phaseChanged) {
                 bossX.set(START_X);
             }
@@ -120,6 +121,21 @@ export default function BattleScene({
 
         if (bossPhase === "attacking") {
             bossAnimationRef.current?.stop();
+
+            const currentX = bossX.get();
+            const isNearHero = Math.abs(currentX - ATTACK_X) <= ATTACK_THRESHOLD;
+
+            if (!isNearHero) {
+                bossAnimationRef.current = animate(bossX, ATTACK_X, {
+                    duration: JUMP_ATTACK_TIME,
+                    ease: "easeIn",
+                    onComplete: () => {
+                        setBossState("attack");
+                    },
+                });
+                return;
+            }
+
             setBossState("attack");
         }
 
