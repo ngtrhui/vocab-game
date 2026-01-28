@@ -21,7 +21,7 @@ export default function Boss({
     const frames = useMemo(() => {
         if (!sprite) return [];
         return Array.from({ length: sprite.frames }, (_, i) =>
-            `/assets/characters/monster/${level}/${sprite.path}/${sprite.path}_${String(i).padStart(3, "0")}.png`
+            `/assets/characters/boss/${sprite.path}/${sprite.path}_${String(i).padStart(3, "0")}.png`
         );
     }, [sprite, level]);
 
