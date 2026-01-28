@@ -191,14 +191,6 @@ export default function BattleScene({
                 <HeroWizard
                     state={heroState}
                     onAnimationEnd={() => {
-                        if (heroState === "hurt") {
-                            if (heroHp <= 0) {
-                                setHeroState("dying");
-                            } else {
-                                setHeroState("idle");
-                            }
-                        }
-
                         if (heroState === "dying") {
                             onHeroDyingComplete?.();
                         }
@@ -221,9 +213,14 @@ export default function BattleScene({
                     state={bossState}
                     onAttackComplete={() => {
                         if (heroState === "dying") return;
+
                         setHeroHp((hp) => {
                             const nextHp = hp - 1;
-                            setHeroState("hurt");
+
+                            if (nextHp <= 0) {
+                                setHeroState("dying");
+                            }
+
                             return Math.max(0, nextHp);
                         });
                     }}

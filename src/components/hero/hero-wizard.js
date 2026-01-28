@@ -33,13 +33,7 @@ const SPRITES = {
     dying: {
         src: "/assets/characters/hero/wizard/Dying.png",
         frames: 4,
-        fps: 6,
-        loop: false,
-    },
-    hurt: {
-        src: "/assets/characters/hero/wizard/Hurt.png",
-        frames: 4,
-        fps: 6,
+        fps: 12,
         loop: false,
     },
 };
