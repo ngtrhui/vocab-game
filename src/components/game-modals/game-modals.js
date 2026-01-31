@@ -19,12 +19,12 @@ export default function GameModals({
                     {
                         label: STRING.CONTINUE,
                         onClick: onContinue,
-                        variant: "primary", // xanh
+                        variant: "primary",
                     },
                     {
                         label: STRING.OUT,
                         onClick: onExit,
-                        variant: "secondary", // xám
+                        variant: "secondary",
                     },
                 ]}
             />
@@ -40,12 +40,12 @@ export default function GameModals({
                     {
                         label: STRING.START_AGAIN,
                         onClick: onRestart,
-                        variant: "danger", // đỏ
+                        variant: "danger", 
                     },
                     {
                         label: STRING.OUT,
                         onClick: onExit,
-                        variant: "secondary", // xám
+                        variant: "secondary",
                     },
                 ]}
             />
@@ -61,7 +61,7 @@ export default function GameModals({
                     {
                         label: STRING.CONTINUE,
                         onClick: onNext,
-                        variant: "primary", // xanh
+                        variant: "primary",
                     },
                     {
                         label: STRING.OUT,
