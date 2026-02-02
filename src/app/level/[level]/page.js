@@ -38,14 +38,13 @@ export default function LevelPage({ params }) {
         progress.progress[level]?.unlockedStage || 1;
 
     return (
-        <div className="h-screen overflow-y-auto scroll-smooth bg-[#0D0B14] text-white">
-            <h1 className="text-3xl font-extrabold mb-10 text-center">
+        < div className= "min-h-screen overflow-y-auto scroll-smooth bg-forty text-secondary" >
+            <h1 className="text-3xl font-extrabold py-10 text-center tracking-widest">
                 {level.toUpperCase()}
             </h1>
 
             <div className="relative mx-auto max-w-md py-12">
-                <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-transparent via-white/20 to-transparent rounded-full" />
-
+                <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-3px bg-gradient-to-b from-transparent via-thirty/40 to-transparent rounded-full" />
                 <div className="relative flex flex-col gap-6">
                     {Array.from({ length: data.totalStages }).map((_, i) => {
                         const stage = i + 1;
